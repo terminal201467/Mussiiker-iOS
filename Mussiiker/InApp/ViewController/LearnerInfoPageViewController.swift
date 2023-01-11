@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LearnerInfoPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
