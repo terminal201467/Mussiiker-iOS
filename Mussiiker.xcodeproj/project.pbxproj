@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9778E56F296EDED000C4FB84 /* Learner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778E56E296EDED000C4FB84 /* Learner.swift */; };
+		9778E572296EEDD400C4FB84 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778E571296EEDD400C4FB84 /* Teacher.swift */; };
+		9778E574296EEE4D00C4FB84 /* MusicHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778E573296EEE4D00C4FB84 /* MusicHost.swift */; };
+		9778E576296EEEAA00C4FB84 /* BasicDefineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778E575296EEEAA00C4FB84 /* BasicDefineModel.swift */; };
 		97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAD296CDC77005E2F8E /* AppDelegate.swift */; };
 		97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */; };
 		97F34CB2296CDC77005E2F8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CB1296CDC77005E2F8E /* ViewController.swift */; };
-		97F34CB5296CDC77005E2F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F34CB3296CDC77005E2F8E /* Main.storyboard */; };
 		97F34CB7296CDC79005E2F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F34CB6296CDC79005E2F8E /* Assets.xcassets */; };
 		97F34CBA296CDC79005E2F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F34CB8296CDC79005E2F8E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9778E56E296EDED000C4FB84 /* Learner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learner.swift; sourceTree = "<group>"; };
+		9778E571296EEDD400C4FB84 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		9778E573296EEE4D00C4FB84 /* MusicHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHost.swift; sourceTree = "<group>"; };
+		9778E575296EEEAA00C4FB84 /* BasicDefineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDefineModel.swift; sourceTree = "<group>"; };
 		97F34CAA296CDC77005E2F8E /* Mussiiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mussiiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F34CAD296CDC77005E2F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		97F34CB1296CDC77005E2F8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		97F34CB4296CDC77005E2F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97F34CB6296CDC79005E2F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97F34CB9296CDC79005E2F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97F34CBB296CDC79005E2F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9778E570296EE34300C4FB84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9778E575296EEEAA00C4FB84 /* BasicDefineModel.swift */,
+				9778E571296EEDD400C4FB84 /* Teacher.swift */,
+				9778E56E296EDED000C4FB84 /* Learner.swift */,
+				9778E573296EEE4D00C4FB84 /* MusicHost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		97F34CA1296CDC77005E2F8E = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +76,7 @@
 				97F34CAD296CDC77005E2F8E /* AppDelegate.swift */,
 				97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */,
 				97F34CB1296CDC77005E2F8E /* ViewController.swift */,
-				97F34CB3296CDC77005E2F8E /* Main.storyboard */,
+				9778E570296EE34300C4FB84 /* Model */,
 				97F34CB6296CDC79005E2F8E /* Assets.xcassets */,
 				97F34CB8296CDC79005E2F8E /* LaunchScreen.storyboard */,
 				97F34CBB296CDC79005E2F8E /* Info.plist */,
@@ -127,7 +144,6 @@
 			files = (
 				97F34CBA296CDC79005E2F8E /* LaunchScreen.storyboard in Resources */,
 				97F34CB7296CDC79005E2F8E /* Assets.xcassets in Resources */,
-				97F34CB5296CDC77005E2F8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +155,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				97F34CB2296CDC77005E2F8E /* ViewController.swift in Sources */,
+				9778E572296EEDD400C4FB84 /* Teacher.swift in Sources */,
+				9778E576296EEEAA00C4FB84 /* BasicDefineModel.swift in Sources */,
 				97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */,
+				9778E574296EEE4D00C4FB84 /* MusicHost.swift in Sources */,
 				97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */,
+				9778E56F296EDED000C4FB84 /* Learner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		97F34CB3296CDC77005E2F8E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				97F34CB4296CDC77005E2F8E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		97F34CB8296CDC79005E2F8E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +306,6 @@
 				INFOPLIST_FILE = Mussiiker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +333,6 @@
 				INFOPLIST_FILE = Mussiiker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
