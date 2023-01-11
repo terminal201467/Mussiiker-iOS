@@ -7,12 +7,23 @@
 
 import Foundation
 
-
-//音樂教室資料
-
+//MARK: -MusicHost
 struct MusicHost: Codable {
+    let host: BasicData
+    var classRoomArea: Area?
+    var classRoomAdress: String?
+    var classRoomName: String?
+    var contactNumber: [String]?
+    var webContact: [String]?
+    var hostInfo: HostInfo
     
-    var host: BasicData
-    var classRoomAdress: String
-    
+    struct HostInfo: Codable {
+        var instrumentKinds: [String]
+        var teachingRoomNumber: Int
+        var rentSpendingDescription: [String]
+        var teachingRoomPhoto: [String]?
+        var isAllowEatOrDrink: Bool
+        var isSaleInstruments: Bool
+        var saleInstrumentsInHome: [String]
+    }
 }

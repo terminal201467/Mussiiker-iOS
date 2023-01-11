@@ -9,10 +9,8 @@ import Foundation
 
 //MARK: -LearnerData
 struct Learner: Codable {
-    
     let basicData: BasicData
     let learningHistory: LearningHistory
-    
     //MARK: -LearningHistory
     struct LearningHistory: Codable {
         var isExperienceWithInstrument: Bool

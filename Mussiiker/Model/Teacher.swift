@@ -9,7 +9,6 @@ import Foundation
 
 //MARK: -TeacherData
 struct Teacher: Codable {
-    
     var basic: BasicData
     var teachingHistory: TeachingHistory
     var teachingStyle: TeachingStyle
