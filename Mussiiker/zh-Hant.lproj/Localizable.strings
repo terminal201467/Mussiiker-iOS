@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Mussiiker
+
+  Created by Jhen Mu on 2023/1/12.
+  
+*/
+
+"findTeachers" = "想找老師";
+"findClassRoonm" = "想找教室";
+"findGroup" = "想找社團";
+"recentActivity" = "近期活動";

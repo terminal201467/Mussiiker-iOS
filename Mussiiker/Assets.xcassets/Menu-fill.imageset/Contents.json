@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "line.3.horizontal.decrease.circle.fill@2x.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

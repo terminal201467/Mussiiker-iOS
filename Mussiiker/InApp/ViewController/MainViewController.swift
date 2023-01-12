@@ -7,21 +7,32 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UITabBarController {
     
+    private var controllers: [UIViewController]? = nil
     
-    //FindTeacherViewController
+    override func loadView() {
+        super.loadView()
+    }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        controllers = [
+            UINavigationController(rootViewController: FindTeacherViewController()),
+            UINavigationController(rootViewController: NearMusicClassRoomViewController()),
+            UINavigationController(rootViewController: FindGroupViewController()),
+            UINavigationController(rootViewController: RecentActivityViewController())
+        ]
+        self.viewControllers = controllers
+        setUpTabBar()
+    }
     
-    //FindMusicClassRoomController
-    
-    
-    //FindMusicGroupController
-       //searchBar
-       //找樂手
-       //找社團
-       //找
-    
+    private func setUpTabBar() {
+//        controllers[0].tabBarItem = UITabBarItem(title: "findTeacher".localized, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>)
+//        controllers[1].tabBarItem = UITabBarItem(title: "findClassRoom".localized, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>)
+//        controllers[2].tabBarItem = UITabBarItem(title: "findGroup".localized, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>)
+//        controllers[3].tabBarItem = UITabBarItem(title: "recentActivity".localized, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>)
+    }
     
     //RecentActivityViewController
        //CollectionView(近期活動資訊）
