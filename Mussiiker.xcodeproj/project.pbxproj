@@ -13,13 +13,26 @@
 		9778E574296EEE4D00C4FB84 /* MusicHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778E573296EEE4D00C4FB84 /* MusicHost.swift */; };
 		9778E576296EEEAA00C4FB84 /* BasicDefineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778E575296EEEAA00C4FB84 /* BasicDefineModel.swift */; };
 		9778E579296EFE2800C4FB84 /* DebugPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778E578296EFE2800C4FB84 /* DebugPrint.swift */; };
-		9778E57F296EFF0F00C4FB84 /* LearnerInfoPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778E57E296EFF0F00C4FB84 /* LearnerInfoPageView.swift */; };
 		9778E581296EFF2C00C4FB84 /* LearnerInfoPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778E580296EFF2C00C4FB84 /* LearnerInfoPageViewModel.swift */; };
+		97BE9AF7296F8502005BD6DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9AF6296F8502005BD6DF /* MainViewController.swift */; };
+		97BE9AFA296F86AE005BD6DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9AF8296F86AE005BD6DF /* LoginViewController.swift */; };
+		97BE9AFB296F86AE005BD6DF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9AF9296F86AE005BD6DF /* LoginViewController.xib */; };
+		97BE9AFE296F88AF005BD6DF /* NearMusicClassRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9AFC296F88AF005BD6DF /* NearMusicClassRoomViewController.swift */; };
+		97BE9AFF296F88AF005BD6DF /* NearMusicClassRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9AFD296F88AF005BD6DF /* NearMusicClassRoomViewController.xib */; };
+		97BE9B02296F88D7005BD6DF /* FindGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B00296F88D7005BD6DF /* FindGroupViewController.swift */; };
+		97BE9B03296F88D7005BD6DF /* FindGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B01296F88D7005BD6DF /* FindGroupViewController.xib */; };
+		97BE9B06296F88ED005BD6DF /* FindTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B04296F88ED005BD6DF /* FindTeacherViewController.swift */; };
+		97BE9B07296F88ED005BD6DF /* FindTeacherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B05296F88ED005BD6DF /* FindTeacherViewController.xib */; };
+		97BE9B0B296F89D3005BD6DF /* RecentActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B09296F89D2005BD6DF /* RecentActivityViewController.swift */; };
+		97BE9B0C296F89D3005BD6DF /* RecentActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B0A296F89D2005BD6DF /* RecentActivityViewController.xib */; };
+		97BE9B11296F8A49005BD6DF /* ThirdPartLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B0F296F8A49005BD6DF /* ThirdPartLoginViewController.swift */; };
+		97BE9B12296F8A49005BD6DF /* ThirdPartLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B10296F8A49005BD6DF /* ThirdPartLoginViewController.xib */; };
+		97BE9B15296F8B2E005BD6DF /* IdentityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B13296F8B2E005BD6DF /* IdentityViewController.swift */; };
+		97BE9B16296F8B2E005BD6DF /* IdentityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B14296F8B2E005BD6DF /* IdentityViewController.xib */; };
 		97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAD296CDC77005E2F8E /* AppDelegate.swift */; };
 		97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */; };
 		97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CB1296CDC77005E2F8E /* LearnerInfoPageViewController.swift */; };
 		97F34CB7296CDC79005E2F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F34CB6296CDC79005E2F8E /* Assets.xcassets */; };
-		97F34CBA296CDC79005E2F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F34CB8296CDC79005E2F8E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,14 +41,27 @@
 		9778E573296EEE4D00C4FB84 /* MusicHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHost.swift; sourceTree = "<group>"; };
 		9778E575296EEEAA00C4FB84 /* BasicDefineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicDefineModel.swift; sourceTree = "<group>"; };
 		9778E578296EFE2800C4FB84 /* DebugPrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPrint.swift; sourceTree = "<group>"; };
-		9778E57E296EFF0F00C4FB84 /* LearnerInfoPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerInfoPageView.swift; sourceTree = "<group>"; };
 		9778E580296EFF2C00C4FB84 /* LearnerInfoPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerInfoPageViewModel.swift; sourceTree = "<group>"; };
+		97BE9AF6296F8502005BD6DF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		97BE9AF8296F86AE005BD6DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		97BE9AF9296F86AE005BD6DF /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		97BE9AFC296F88AF005BD6DF /* NearMusicClassRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMusicClassRoomViewController.swift; sourceTree = "<group>"; };
+		97BE9AFD296F88AF005BD6DF /* NearMusicClassRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NearMusicClassRoomViewController.xib; sourceTree = "<group>"; };
+		97BE9B00296F88D7005BD6DF /* FindGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGroupViewController.swift; sourceTree = "<group>"; };
+		97BE9B01296F88D7005BD6DF /* FindGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindGroupViewController.xib; sourceTree = "<group>"; };
+		97BE9B04296F88ED005BD6DF /* FindTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTeacherViewController.swift; sourceTree = "<group>"; };
+		97BE9B05296F88ED005BD6DF /* FindTeacherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindTeacherViewController.xib; sourceTree = "<group>"; };
+		97BE9B09296F89D2005BD6DF /* RecentActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentActivityViewController.swift; sourceTree = "<group>"; };
+		97BE9B0A296F89D2005BD6DF /* RecentActivityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentActivityViewController.xib; sourceTree = "<group>"; };
+		97BE9B0F296F8A49005BD6DF /* ThirdPartLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartLoginViewController.swift; sourceTree = "<group>"; };
+		97BE9B10296F8A49005BD6DF /* ThirdPartLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdPartLoginViewController.xib; sourceTree = "<group>"; };
+		97BE9B13296F8B2E005BD6DF /* IdentityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityViewController.swift; sourceTree = "<group>"; };
+		97BE9B14296F8B2E005BD6DF /* IdentityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdentityViewController.xib; sourceTree = "<group>"; };
 		97F34CAA296CDC77005E2F8E /* Mussiiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mussiiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F34CAD296CDC77005E2F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		97F34CB1296CDC77005E2F8E /* LearnerInfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnerInfoPageViewController.swift; sourceTree = "<group>"; };
 		97F34CB6296CDC79005E2F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		97F34CB9296CDC79005E2F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97F34CBB296CDC79005E2F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD416796C4FDC24F9DF0879D /* Pods-Mussiiker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mussiiker.debug.xcconfig"; path = "Target Support Files/Pods-Mussiiker/Pods-Mussiiker.debug.xcconfig"; sourceTree = "<group>"; };
 		C9B8294F95369B83082C4813 /* Pods_Mussiiker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mussiiker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +86,6 @@
 				AD416796C4FDC24F9DF0879D /* Pods-Mussiiker.debug.xcconfig */,
 				D145700DE4C46C88F6732724 /* Pods-Mussiiker.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -93,7 +118,11 @@
 		9778E57B296EFE9B00C4FB84 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				97BE9AF6296F8502005BD6DF /* MainViewController.swift */,
 				97F34CB1296CDC77005E2F8E /* LearnerInfoPageViewController.swift */,
+				97BE9B0E296F8A16005BD6DF /* MusicHost */,
+				97BE9B0D296F89F3005BD6DF /* Teacher */,
+				97BE9B08296F8998005BD6DF /* Learner */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -101,7 +130,6 @@
 		9778E57C296EFEAE00C4FB84 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9778E57E296EFF0F00C4FB84 /* LearnerInfoPageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +145,12 @@
 		9778E582296EFF3D00C4FB84 /* UnBoxing */ = {
 			isa = PBXGroup;
 			children = (
+				97BE9AF8296F86AE005BD6DF /* LoginViewController.swift */,
+				97BE9B13296F8B2E005BD6DF /* IdentityViewController.swift */,
+				97BE9B14296F8B2E005BD6DF /* IdentityViewController.xib */,
+				97BE9AF9296F86AE005BD6DF /* LoginViewController.xib */,
+				97BE9B0F296F8A49005BD6DF /* ThirdPartLoginViewController.swift */,
+				97BE9B10296F8A49005BD6DF /* ThirdPartLoginViewController.xib */,
 			);
 			path = UnBoxing;
 			sourceTree = "<group>";
@@ -129,6 +163,35 @@
 				9778E57D296EFEC000C4FB84 /* ViewModel */,
 			);
 			path = InApp;
+			sourceTree = "<group>";
+		};
+		97BE9B08296F8998005BD6DF /* Learner */ = {
+			isa = PBXGroup;
+			children = (
+				97BE9B04296F88ED005BD6DF /* FindTeacherViewController.swift */,
+				97BE9B05296F88ED005BD6DF /* FindTeacherViewController.xib */,
+				97BE9B00296F88D7005BD6DF /* FindGroupViewController.swift */,
+				97BE9B01296F88D7005BD6DF /* FindGroupViewController.xib */,
+				97BE9AFC296F88AF005BD6DF /* NearMusicClassRoomViewController.swift */,
+				97BE9AFD296F88AF005BD6DF /* NearMusicClassRoomViewController.xib */,
+				97BE9B09296F89D2005BD6DF /* RecentActivityViewController.swift */,
+				97BE9B0A296F89D2005BD6DF /* RecentActivityViewController.xib */,
+			);
+			path = Learner;
+			sourceTree = "<group>";
+		};
+		97BE9B0D296F89F3005BD6DF /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Teacher;
+			sourceTree = "<group>";
+		};
+		97BE9B0E296F8A16005BD6DF /* MusicHost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MusicHost;
 			sourceTree = "<group>";
 		};
 		97F34CA1296CDC77005E2F8E = {
@@ -160,7 +223,6 @@
 				9778E577296EFE0A00C4FB84 /* DebugPrint */,
 				9778E570296EE34300C4FB84 /* Model */,
 				97F34CB6296CDC79005E2F8E /* Assets.xcassets */,
-				97F34CB8296CDC79005E2F8E /* LaunchScreen.storyboard */,
 				97F34CBB296CDC79005E2F8E /* Info.plist */,
 			);
 			path = Mussiiker;
@@ -234,8 +296,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97F34CBA296CDC79005E2F8E /* LaunchScreen.storyboard in Resources */,
+				97BE9B07296F88ED005BD6DF /* FindTeacherViewController.xib in Resources */,
+				97BE9B12296F8A49005BD6DF /* ThirdPartLoginViewController.xib in Resources */,
+				97BE9AFB296F86AE005BD6DF /* LoginViewController.xib in Resources */,
+				97BE9B0C296F89D3005BD6DF /* RecentActivityViewController.xib in Resources */,
+				97BE9B16296F8B2E005BD6DF /* IdentityViewController.xib in Resources */,
+				97BE9B03296F88D7005BD6DF /* FindGroupViewController.xib in Resources */,
 				97F34CB7296CDC79005E2F8E /* Assets.xcassets in Resources */,
+				97BE9AFF296F88AF005BD6DF /* NearMusicClassRoomViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,31 +356,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BE9AFA296F86AE005BD6DF /* LoginViewController.swift in Sources */,
 				97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */,
+				97BE9B0B296F89D3005BD6DF /* RecentActivityViewController.swift in Sources */,
+				97BE9B11296F8A49005BD6DF /* ThirdPartLoginViewController.swift in Sources */,
+				97BE9AF7296F8502005BD6DF /* MainViewController.swift in Sources */,
 				9778E572296EEDD400C4FB84 /* Teacher.swift in Sources */,
 				9778E579296EFE2800C4FB84 /* DebugPrint.swift in Sources */,
+				97BE9B06296F88ED005BD6DF /* FindTeacherViewController.swift in Sources */,
 				9778E576296EEEAA00C4FB84 /* BasicDefineModel.swift in Sources */,
 				97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */,
+				97BE9AFE296F88AF005BD6DF /* NearMusicClassRoomViewController.swift in Sources */,
 				9778E574296EEE4D00C4FB84 /* MusicHost.swift in Sources */,
-				9778E57F296EFF0F00C4FB84 /* LearnerInfoPageView.swift in Sources */,
 				9778E581296EFF2C00C4FB84 /* LearnerInfoPageViewModel.swift in Sources */,
 				97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */,
 				9778E56F296EDED000C4FB84 /* Learner.swift in Sources */,
+				97BE9B02296F88D7005BD6DF /* FindGroupViewController.swift in Sources */,
+				97BE9B15296F8B2E005BD6DF /* IdentityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		97F34CB8296CDC79005E2F8E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				97F34CB9296CDC79005E2F8E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		97F34CBC296CDC79005E2F8E /* Debug */ = {
