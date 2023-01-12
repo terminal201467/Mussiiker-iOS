@@ -28,17 +28,9 @@ class MainViewController: UITabBarController {
     }
     
     private func setUpTabBar() {
-//        controllers[0].tabBarItem = UITabBarItem(title: "findTeacher".localized, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>)
-//        controllers[1].tabBarItem = UITabBarItem(title: "findClassRoom".localized, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>)
-//        controllers[2].tabBarItem = UITabBarItem(title: "findGroup".localized, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>)
-//        controllers[3].tabBarItem = UITabBarItem(title: "recentActivity".localized, image: <#T##UIImage?#>, selectedImage: <#T##UIImage?#>)
+        controllers?[0].tabBarItem = UITabBarItem(title: "findTeacher".localized, image: UIImage(named: "magnifyingglass.circle"), selectedImage: UIImage(named: "magnifyingglass.circle.fill"))
+        controllers?[1].tabBarItem = UITabBarItem(title: "findClassRoom".localized, image: UIImage(named: ""), selectedImage: UIImage(named: ""))
+        controllers?[2].tabBarItem = UITabBarItem(title: "findGroup".localized, image: UIImage(named: ""), selectedImage: UIImage(named: ""))
+        controllers?[3].tabBarItem = UITabBarItem(title: "recentActivity".localized, image: UIImage(named: ""), selectedImage: UIImage(named: ""))
     }
-    
-    //RecentActivityViewController
-       //CollectionView(近期活動資訊）
-       //TableView(依照使用者有興趣的部分）
-       
-       //右上方也許會有個鍵：找不到有興趣的活動嗎?
-       //點擊之後進到搜尋頁面
-
 }
