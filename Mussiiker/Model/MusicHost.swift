@@ -9,7 +9,7 @@ import Foundation
 
 //MARK: -MusicHost
 struct MusicHost: Codable {
-    let host: BasicData
+    let basicData: BasicData
     var classRoomArea: Area?
     var classRoomAdress: String?
     var classRoomName: String?
