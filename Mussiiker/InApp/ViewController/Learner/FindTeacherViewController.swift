@@ -9,26 +9,26 @@ import UIKit
 
 class FindTeacherViewController: UIViewController {
     
-    //尋找老師：可以針對專長進行尋找
-    //瀏覽老師：
-    //推薦音樂老師：
+    @IBOutlet var settingBarButton: UIBarButtonItem!
+    @IBOutlet var alreadyCollectBarButton: UIBarButtonItem!
+    
+    
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUpNavigationBar()
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    private func setUpNavigationBar() {
+        title = "findTeachers".localized
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        
     }
-    */
+
+
+    
 
 }

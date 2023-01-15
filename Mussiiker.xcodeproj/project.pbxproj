@@ -31,6 +31,8 @@
 		97BE9B16296F8B2E005BD6DF /* IdentityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B14296F8B2E005BD6DF /* IdentityViewController.xib */; };
 		97BE9B1F29705999005BD6DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B2129705999005BD6DF /* Localizable.strings */; };
 		97BE9B2529705B2B005BD6DF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B2429705B2B005BD6DF /* String.swift */; };
+		97BE9B282970D169005BD6DF /* CollectTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B262970D169005BD6DF /* CollectTeacherViewController.swift */; };
+		97BE9B292970D169005BD6DF /* CollectTeacherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B272970D169005BD6DF /* CollectTeacherViewController.xib */; };
 		97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAD296CDC77005E2F8E /* AppDelegate.swift */; };
 		97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */; };
 		97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CB1296CDC77005E2F8E /* LearnerInfoPageViewController.swift */; };
@@ -62,6 +64,8 @@
 		97BE9B2029705999005BD6DF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		97BE9B22297059BD005BD6DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		97BE9B2429705B2B005BD6DF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		97BE9B262970D169005BD6DF /* CollectTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectTeacherViewController.swift; sourceTree = "<group>"; };
+		97BE9B272970D169005BD6DF /* CollectTeacherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectTeacherViewController.xib; sourceTree = "<group>"; };
 		97F34CAA296CDC77005E2F8E /* Mussiiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mussiiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F34CAD296CDC77005E2F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 			children = (
 				97BE9B04296F88ED005BD6DF /* FindTeacherViewController.swift */,
 				97BE9B05296F88ED005BD6DF /* FindTeacherViewController.xib */,
+				97BE9B262970D169005BD6DF /* CollectTeacherViewController.swift */,
+				97BE9B272970D169005BD6DF /* CollectTeacherViewController.xib */,
 				97BE9B00296F88D7005BD6DF /* FindGroupViewController.swift */,
 				97BE9B01296F88D7005BD6DF /* FindGroupViewController.xib */,
 				97BE9AFC296F88AF005BD6DF /* NearMusicClassRoomViewController.swift */,
@@ -230,11 +236,11 @@
 			children = (
 				97F34CAD296CDC77005E2F8E /* AppDelegate.swift */,
 				97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */,
+				9778E570296EE34300C4FB84 /* Model */,
 				9778E583296EFF7500C4FB84 /* InApp */,
 				9778E582296EFF3D00C4FB84 /* UnBoxing */,
 				9778E57A296EFE3B00C4FB84 /* Errors */,
 				9778E577296EFE0A00C4FB84 /* DebugPrint */,
-				9778E570296EE34300C4FB84 /* Model */,
 				97F34CB6296CDC79005E2F8E /* Assets.xcassets */,
 				97BE9B2329705B18005BD6DF /* Extension */,
 				97BE9B2129705999005BD6DF /* Localizable.strings */,
@@ -316,6 +322,7 @@
 				97BE9B12296F8A49005BD6DF /* ThirdPartLoginViewController.xib in Resources */,
 				97BE9AFB296F86AE005BD6DF /* LoginViewController.xib in Resources */,
 				97BE9B0C296F89D3005BD6DF /* RecentActivityViewController.xib in Resources */,
+				97BE9B292970D169005BD6DF /* CollectTeacherViewController.xib in Resources */,
 				97BE9B1F29705999005BD6DF /* Localizable.strings in Resources */,
 				97BE9B16296F8B2E005BD6DF /* IdentityViewController.xib in Resources */,
 				97BE9B03296F88D7005BD6DF /* FindGroupViewController.xib in Resources */,
@@ -377,6 +384,7 @@
 				97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */,
 				97BE9B0B296F89D3005BD6DF /* RecentActivityViewController.swift in Sources */,
 				97BE9B11296F8A49005BD6DF /* ThirdPartLoginViewController.swift in Sources */,
+				97BE9B282970D169005BD6DF /* CollectTeacherViewController.swift in Sources */,
 				97BE9AF7296F8502005BD6DF /* MainViewController.swift in Sources */,
 				9778E572296EEDD400C4FB84 /* Teacher.swift in Sources */,
 				9778E579296EFE2800C4FB84 /* DebugPrint.swift in Sources */,
