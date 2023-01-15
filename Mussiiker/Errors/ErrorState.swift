@@ -9,6 +9,8 @@ import Foundation
 
 
 enum ErrorState: Error{
-    
+    case isEmpty
+    case decodeError
+    case networkError
     
 }

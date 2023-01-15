@@ -7,22 +7,29 @@
 
 import Foundation
 
+enum DataType: String {
+    case recommend, stringInstrument, drums, woodWind, brassInstrument, otherkinds
+}
+
 //Singleton
 class TeacherDataModel {
+    //MARK: -Parameters
+    var requestDataType: DataType
     
-    static let shared = TeacherDataModel()
+    //MARK: -StoreData
+    private var teachers: [Teacher] = []
     
-    private var teachers: [Teacher] = [] {
-        didSet {
-            
-        }
+    //MARK: -Value Passing Closure
+    var click: ((Int)->(Void))?
+    
+    //MARK: -Initailization
+    init (by dataType: DataType) {
+        self.requestDataType = dataType
     }
     
-    var click: ((Int) -> Int)?
-    
-    //MARK: -network
-    public func loadData() {
-        
+    //MARK: -Network
+    public func loadData() -> [Teacher] {
+        return teachers
     }
     
     public func postData() {
@@ -33,7 +40,7 @@ class TeacherDataModel {
         
     }
     
-    //MARK: - CRUD function
+    //MARK: - CRUD functions
     public func appendTeacherData(by teacher: Teacher) {
         teachers.append(teacher)
     }
@@ -58,7 +65,11 @@ class TeacherDataModel {
     //MARK: -CollectionView's custom function
     public func numberOfItemsInSection(_ section: Int) -> Int {
         if teachers.isEmpty {
-            fatalError("EmptyData in the teachers Data")
+            do{
+                return try loadData().count
+            }catch{
+                print(ErrorState.isEmpty)
+            }
         } else {
             return teachers.count
         }
@@ -67,12 +78,6 @@ class TeacherDataModel {
     public func cellForItemsAtSection(_ indexPath: IndexPath) -> Teacher {
         return teachers[indexPath.row]
     }
-    
-    //MARK: -DataErrors
-//    private func judgeTheDataAndRequstAgain() throws -> String {
-//
-//
-//    }
     
     
     

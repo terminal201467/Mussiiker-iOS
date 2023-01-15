@@ -10,7 +10,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindTeacherViewController" customModule="Mussiiker" customModuleProvider="target">
             <connections>
+                <outlet property="brassInstrumentContainerView" destination="u6B-oT-1VV" id="SEC-Ds-em7"/>
+                <outlet property="brassInstrumentKnowMoreButton" destination="zNy-0u-k7o" id="1TR-e8-lSK"/>
+                <outlet property="drumKnowMoreButton" destination="MeR-v3-Tjf" id="zxh-vY-zpD"/>
+                <outlet property="drumTeacherContainerView" destination="voh-cV-YzO" id="HEG-rc-Bsb"/>
+                <outlet property="otherKindsKnowMoreButton" destination="dYf-eM-jGV" id="g0q-Nd-7n1"/>
+                <outlet property="othersContainerView" destination="4dJ-De-yii" id="vLU-oI-VfU"/>
+                <outlet property="recommedTeacherKnowMoreButton" destination="fjl-5O-rQ3" id="rqf-Bg-p43"/>
+                <outlet property="stringInstrumentContainerView" destination="3Q0-X4-S7Q" id="5Zg-eI-SML"/>
+                <outlet property="stringInstrumentKnowMoreButton" destination="IyQ-xU-c3r" id="k0t-3K-qv3"/>
+                <outlet property="systemRecommendTeacherView" destination="grI-6B-EhJ" id="wER-fi-grD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="woodWindInstrumentKnowMoreButton" destination="Q3E-0H-Vxw" id="8GC-a4-6NV"/>
+                <outlet property="woodWindInstrumentsView" destination="e8E-3X-eHC" id="yGY-UK-1do"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -28,7 +40,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROp-0k-Ajd" userLabel="SystemRecommendTeacherView">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grI-6B-EhJ" userLabel="CollectionContainerView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grI-6B-EhJ" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                             <viewLayoutGuide key="safeArea" id="yGa-qJ-nSa"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -37,9 +49,9 @@
                                             <rect key="frame" x="0.0" y="200" width="414" height="50"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjl-5O-rQ3" userLabel="ExploreMoreTeacher">
-                                                    <rect key="frame" x="327" y="10" width="67" height="30"/>
+                                                    <rect key="frame" x="370" y="10" width="24" height="30"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain"/>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -63,10 +75,10 @@
                                         <constraint firstItem="grI-6B-EhJ" firstAttribute="leading" secondItem="ROp-0k-Ajd" secondAttribute="leading" id="vkc-mT-hmR"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKk-rg-MyK" userLabel="StringInstrumentContainerView">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKk-rg-MyK" userLabel="StringInstrumentView">
                                     <rect key="frame" x="0.0" y="250" width="414" height="250"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Q0-X4-S7Q" userLabel="CollectionContainerView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Q0-X4-S7Q" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                             <viewLayoutGuide key="safeArea" id="qCm-Wp-jQi"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,10 +113,10 @@
                                         <constraint firstAttribute="trailing" secondItem="3Q0-X4-S7Q" secondAttribute="trailing" id="v50-ol-mKT"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnU-py-1ur" userLabel="DrumTeacherContainerView">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnU-py-1ur" userLabel="DrumView">
                                     <rect key="frame" x="0.0" y="500" width="414" height="250"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voh-cV-YzO" userLabel="CollectionContainerView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voh-cV-YzO" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                             <viewLayoutGuide key="safeArea" id="eFF-eX-VgP"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -144,7 +156,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhX-Hl-AeG" userLabel="Wood-windInstrumentsView">
                                     <rect key="frame" x="0.0" y="750" width="414" height="250"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8E-3X-eHC" userLabel="CollectionContainerView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8E-3X-eHC" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <viewLayoutGuide key="safeArea" id="VXz-mq-hQS"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -181,10 +193,10 @@
                                         <constraint firstItem="YhY-g3-34b" firstAttribute="leading" secondItem="EhX-Hl-AeG" secondAttribute="leading" id="xG5-CF-wEH"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gW-EY-VnX" userLabel="BrassInstrumentsContainerView">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gW-EY-VnX" userLabel="BrassInstrumentsView">
                                     <rect key="frame" x="0.0" y="1000" width="414" height="250"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6B-oT-1VV" userLabel="CollectionContainerView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6B-oT-1VV" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                             <viewLayoutGuide key="safeArea" id="3Ts-SY-Vp7"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -219,10 +231,10 @@
                                         <constraint firstItem="k0B-fm-O9y" firstAttribute="leading" secondItem="2gW-EY-VnX" secondAttribute="leading" id="rNP-ZW-w60"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaN-Z0-Kby" userLabel="OthersContainView">
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaN-Z0-Kby" userLabel="OthersKindView">
                                     <rect key="frame" x="0.0" y="1250" width="414" height="250"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dJ-De-yii" userLabel="CollectionContainerView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dJ-De-yii" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                             <viewLayoutGuide key="safeArea" id="9vI-lj-4Ls"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

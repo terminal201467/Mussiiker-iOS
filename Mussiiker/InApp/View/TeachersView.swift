@@ -10,7 +10,7 @@ import SnapKit
 
 class TeachersView: UIView {
     
-    private var viewModel: TeacherDataModel
+    private var viewModel: TeacherDataModel!
     
     private let teachersView: UICollectionView = {
        let flowLayout = UICollectionViewFlowLayout()
@@ -22,12 +22,15 @@ class TeachersView: UIView {
         return view
     }()
     
-    init(viewModel: TeacherDataModel) {
-        self.viewModel = viewModel
+    init(dataType: DataType) {
+        self.viewModel = TeacherDataModel(by: dataType)
+        super.init(frame: .zero)
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .white
+        setViewModel()
         setCollectionView()
         autoLayout()
         
@@ -40,6 +43,13 @@ class TeachersView: UIView {
     private func setCollectionView() {
         teachersView.dataSource = self
         teachersView.delegate = self
+    }
+    
+    private func setViewModel() {
+        viewModel.loadData()
+        viewModel.click = { row in
+            print("row:\(row)")
+        }
     }
     
     

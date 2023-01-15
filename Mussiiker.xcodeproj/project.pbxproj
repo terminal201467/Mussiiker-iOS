@@ -41,6 +41,7 @@
 		97BE9B352973AF26005BD6DF /* TeachersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B332973AF26005BD6DF /* TeachersCollectionViewCell.xib */; };
 		97BE9B382973BC13005BD6DF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B372973BC13005BD6DF /* Network.swift */; };
 		97BE9B3A2973C122005BD6DF /* ErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B392973C122005BD6DF /* ErrorState.swift */; };
+		97BE9B3C2973E536005BD6DF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B3B2973E536005BD6DF /* UIColor.swift */; };
 		97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAD296CDC77005E2F8E /* AppDelegate.swift */; };
 		97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */; };
 		97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CB1296CDC77005E2F8E /* LearnerInfoPageViewController.swift */; };
@@ -82,6 +83,7 @@
 		97BE9B332973AF26005BD6DF /* TeachersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeachersCollectionViewCell.xib; sourceTree = "<group>"; };
 		97BE9B372973BC13005BD6DF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		97BE9B392973C122005BD6DF /* ErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorState.swift; sourceTree = "<group>"; };
+		97BE9B3B2973E536005BD6DF /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		97F34CAA296CDC77005E2F8E /* Mussiiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mussiiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F34CAD296CDC77005E2F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				97BE9B2429705B2B005BD6DF /* String.swift */,
+				97BE9B3B2973E536005BD6DF /* UIColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				97BE9B282970D169005BD6DF /* CollectTeacherViewController.swift in Sources */,
 				97BE9AF7296F8502005BD6DF /* MainViewController.swift in Sources */,
 				9778E572296EEDD400C4FB84 /* Teacher.swift in Sources */,
+				97BE9B3C2973E536005BD6DF /* UIColor.swift in Sources */,
 				9778E579296EFE2800C4FB84 /* DebugPrint.swift in Sources */,
 				97BE9B06296F88ED005BD6DF /* FindTeacherViewController.swift in Sources */,
 				9778E576296EEEAA00C4FB84 /* BasicDefineModel.swift in Sources */,
