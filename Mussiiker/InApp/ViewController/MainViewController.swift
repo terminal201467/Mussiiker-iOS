@@ -11,6 +11,8 @@ class MainViewController: UITabBarController {
     
     private var controllers: [UIViewController]? = nil
     
+    
+    //MARK: -LifeCycle
     override func loadView() {
         super.loadView()
     }
@@ -27,6 +29,7 @@ class MainViewController: UITabBarController {
         setUpTabBar()
     }
     
+    //MARK: -Functions
     private func setUpTabBar() {
         controllers?[0].tabBarItem = UITabBarItem(title: "findTeachers".localized, image: UIImage(named: "magnifyingglass.circle"), selectedImage: nil)
         controllers?[1].tabBarItem = UITabBarItem(title: "findClassRoom".localized, image: UIImage(named: "square.split.bottomrightquarter"), selectedImage: nil)

@@ -15,7 +15,9 @@ class TeachersCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var teacherName: UILabel!
     
-    @IBOutlet var professionInstrument: UILabel!
+    @IBOutlet var ableLocation: UILabel!
+    
+    @IBOutlet var professionInstruments: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
