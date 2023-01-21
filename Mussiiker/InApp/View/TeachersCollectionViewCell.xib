@@ -76,6 +76,9 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6Z-oR-pAK" userLabel="ProfessionInstrumentBackground">
                         <rect key="frame" x="13" y="103" width="60" height="30"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
@@ -92,6 +95,7 @@
             </constraints>
             <connections>
                 <outlet property="ableLocation" destination="Iqo-G5-s42" id="3Qc-EB-Pgy"/>
+                <outlet property="professionInstruments" destination="VdF-Lo-gYc" id="LPh-RA-T7s"/>
                 <outlet property="teacherName" destination="AiP-FK-gPu" id="aJA-Kp-593"/>
                 <outlet property="teacherPhoto" destination="Qjt-J6-716" id="1Jk-Fb-EiB"/>
             </connections>

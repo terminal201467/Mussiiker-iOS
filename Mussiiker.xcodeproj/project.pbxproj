@@ -31,17 +31,18 @@
 		97BE9B16296F8B2E005BD6DF /* IdentityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B14296F8B2E005BD6DF /* IdentityViewController.xib */; };
 		97BE9B1F29705999005BD6DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B2129705999005BD6DF /* Localizable.strings */; };
 		97BE9B2529705B2B005BD6DF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B2429705B2B005BD6DF /* String.swift */; };
-		97BE9B282970D169005BD6DF /* CollectTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B262970D169005BD6DF /* CollectTeacherViewController.swift */; };
-		97BE9B292970D169005BD6DF /* CollectTeacherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B272970D169005BD6DF /* CollectTeacherViewController.xib */; };
 		97BE9B2C2973A797005BD6DF /* SearchTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B2A2973A797005BD6DF /* SearchTeacherViewController.swift */; };
 		97BE9B2D2973A797005BD6DF /* SearchTeacherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B2B2973A797005BD6DF /* SearchTeacherViewController.xib */; };
 		97BE9B2F2973AC5B005BD6DF /* TeachersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B2E2973AC5B005BD6DF /* TeachersView.swift */; };
 		97BE9B312973AC84005BD6DF /* TeachersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B302973AC84005BD6DF /* TeachersViewModel.swift */; };
-		97BE9B342973AF26005BD6DF /* TeachersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B322973AF26005BD6DF /* TeachersCollectionViewCell.swift */; };
-		97BE9B352973AF26005BD6DF /* TeachersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97BE9B332973AF26005BD6DF /* TeachersCollectionViewCell.xib */; };
 		97BE9B382973BC13005BD6DF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B372973BC13005BD6DF /* Network.swift */; };
 		97BE9B3A2973C122005BD6DF /* ErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B392973C122005BD6DF /* ErrorState.swift */; };
 		97BE9B3C2973E536005BD6DF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE9B3B2973E536005BD6DF /* UIColor.swift */; };
+		97DE344B297B9C72001C377D /* MoreTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE3449297B9C72001C377D /* MoreTeacherViewController.swift */; };
+		97DE344C297B9C72001C377D /* MoreTeacherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE344A297B9C72001C377D /* MoreTeacherViewController.xib */; };
+		97DE344E297B9D9F001C377D /* MoreTeacherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE344D297B9D9F001C377D /* MoreTeacherViewModel.swift */; };
+		97DE3451297B9FDE001C377D /* MoreTeacherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE344F297B9FDE001C377D /* MoreTeacherTableViewCell.swift */; };
+		97DE3452297B9FDE001C377D /* MoreTeacherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE3450297B9FDE001C377D /* MoreTeacherTableViewCell.xib */; };
 		97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAD296CDC77005E2F8E /* AppDelegate.swift */; };
 		97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */; };
 		97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CB1296CDC77005E2F8E /* LearnerInfoPageViewController.swift */; };
@@ -73,17 +74,18 @@
 		97BE9B2029705999005BD6DF /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		97BE9B22297059BD005BD6DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		97BE9B2429705B2B005BD6DF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		97BE9B262970D169005BD6DF /* CollectTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectTeacherViewController.swift; sourceTree = "<group>"; };
-		97BE9B272970D169005BD6DF /* CollectTeacherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectTeacherViewController.xib; sourceTree = "<group>"; };
 		97BE9B2A2973A797005BD6DF /* SearchTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeacherViewController.swift; sourceTree = "<group>"; };
 		97BE9B2B2973A797005BD6DF /* SearchTeacherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTeacherViewController.xib; sourceTree = "<group>"; };
 		97BE9B2E2973AC5B005BD6DF /* TeachersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersView.swift; sourceTree = "<group>"; };
 		97BE9B302973AC84005BD6DF /* TeachersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersViewModel.swift; sourceTree = "<group>"; };
-		97BE9B322973AF26005BD6DF /* TeachersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersCollectionViewCell.swift; sourceTree = "<group>"; };
-		97BE9B332973AF26005BD6DF /* TeachersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeachersCollectionViewCell.xib; sourceTree = "<group>"; };
 		97BE9B372973BC13005BD6DF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		97BE9B392973C122005BD6DF /* ErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorState.swift; sourceTree = "<group>"; };
 		97BE9B3B2973E536005BD6DF /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		97DE3449297B9C72001C377D /* MoreTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTeacherViewController.swift; sourceTree = "<group>"; };
+		97DE344A297B9C72001C377D /* MoreTeacherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTeacherViewController.xib; sourceTree = "<group>"; };
+		97DE344D297B9D9F001C377D /* MoreTeacherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTeacherViewModel.swift; sourceTree = "<group>"; };
+		97DE344F297B9FDE001C377D /* MoreTeacherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTeacherTableViewCell.swift; sourceTree = "<group>"; };
+		97DE3450297B9FDE001C377D /* MoreTeacherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTeacherTableViewCell.xib; sourceTree = "<group>"; };
 		97F34CAA296CDC77005E2F8E /* Mussiiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mussiiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F34CAD296CDC77005E2F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,8 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				97BE9B2E2973AC5B005BD6DF /* TeachersView.swift */,
-				97BE9B322973AF26005BD6DF /* TeachersCollectionViewCell.swift */,
-				97BE9B332973AF26005BD6DF /* TeachersCollectionViewCell.xib */,
+				97DE344F297B9FDE001C377D /* MoreTeacherTableViewCell.swift */,
+				97DE3450297B9FDE001C377D /* MoreTeacherTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				97BE9B302973AC84005BD6DF /* TeachersViewModel.swift */,
+				97DE344D297B9D9F001C377D /* MoreTeacherViewModel.swift */,
 				9778E580296EFF2C00C4FB84 /* LearnerInfoPageViewModel.swift */,
 			);
 			path = ViewModel;
@@ -202,8 +205,8 @@
 			children = (
 				97BE9B04296F88ED005BD6DF /* FindTeacherViewController.swift */,
 				97BE9B05296F88ED005BD6DF /* FindTeacherViewController.xib */,
-				97BE9B262970D169005BD6DF /* CollectTeacherViewController.swift */,
-				97BE9B272970D169005BD6DF /* CollectTeacherViewController.xib */,
+				97DE3449297B9C72001C377D /* MoreTeacherViewController.swift */,
+				97DE344A297B9C72001C377D /* MoreTeacherViewController.xib */,
 				97BE9B2A2973A797005BD6DF /* SearchTeacherViewController.swift */,
 				97BE9B2B2973A797005BD6DF /* SearchTeacherViewController.xib */,
 				97BE9B00296F88D7005BD6DF /* FindGroupViewController.swift */,
@@ -354,16 +357,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				97BE9B2D2973A797005BD6DF /* SearchTeacherViewController.xib in Resources */,
-				97BE9B352973AF26005BD6DF /* TeachersCollectionViewCell.xib in Resources */,
 				97BE9B07296F88ED005BD6DF /* FindTeacherViewController.xib in Resources */,
 				97BE9B12296F8A49005BD6DF /* ThirdPartLoginViewController.xib in Resources */,
 				97BE9AFB296F86AE005BD6DF /* LoginViewController.xib in Resources */,
 				97BE9B0C296F89D3005BD6DF /* RecentActivityViewController.xib in Resources */,
-				97BE9B292970D169005BD6DF /* CollectTeacherViewController.xib in Resources */,
 				97BE9B1F29705999005BD6DF /* Localizable.strings in Resources */,
+				97DE3452297B9FDE001C377D /* MoreTeacherTableViewCell.xib in Resources */,
 				97BE9B16296F8B2E005BD6DF /* IdentityViewController.xib in Resources */,
 				97BE9B03296F88D7005BD6DF /* FindGroupViewController.xib in Resources */,
 				97F34CB7296CDC79005E2F8E /* Assets.xcassets in Resources */,
+				97DE344C297B9C72001C377D /* MoreTeacherViewController.xib in Resources */,
 				97BE9AFF296F88AF005BD6DF /* NearMusicClassRoomViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +426,7 @@
 				97BE9B0B296F89D3005BD6DF /* RecentActivityViewController.swift in Sources */,
 				97BE9B2C2973A797005BD6DF /* SearchTeacherViewController.swift in Sources */,
 				97BE9B11296F8A49005BD6DF /* ThirdPartLoginViewController.swift in Sources */,
-				97BE9B282970D169005BD6DF /* CollectTeacherViewController.swift in Sources */,
+				97DE344B297B9C72001C377D /* MoreTeacherViewController.swift in Sources */,
 				97BE9AF7296F8502005BD6DF /* MainViewController.swift in Sources */,
 				9778E572296EEDD400C4FB84 /* Teacher.swift in Sources */,
 				97BE9B3C2973E536005BD6DF /* UIColor.swift in Sources */,
@@ -438,8 +441,9 @@
 				97BE9B2529705B2B005BD6DF /* String.swift in Sources */,
 				9778E581296EFF2C00C4FB84 /* LearnerInfoPageViewModel.swift in Sources */,
 				97BE9B2F2973AC5B005BD6DF /* TeachersView.swift in Sources */,
-				97BE9B342973AF26005BD6DF /* TeachersCollectionViewCell.swift in Sources */,
 				97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */,
+				97DE3451297B9FDE001C377D /* MoreTeacherTableViewCell.swift in Sources */,
+				97DE344E297B9D9F001C377D /* MoreTeacherViewModel.swift in Sources */,
 				9778E56F296EDED000C4FB84 /* Learner.swift in Sources */,
 				97BE9B02296F88D7005BD6DF /* FindGroupViewController.swift in Sources */,
 				97BE9B15296F8B2E005BD6DF /* IdentityViewController.swift in Sources */,

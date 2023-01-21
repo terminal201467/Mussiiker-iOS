@@ -48,8 +48,8 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YU6-UP-4gn" userLabel="BottomView">
                                             <rect key="frame" x="0.0" y="200" width="414" height="50"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjl-5O-rQ3" userLabel="ExploreMoreTeacher">
-                                                    <rect key="frame" x="370" y="10" width="24" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjl-5O-rQ3" userLabel="ExploreMoreTeacher">
+                                                    <rect key="frame" x="327" y="10" width="67" height="30"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain"/>
                                                 </button>

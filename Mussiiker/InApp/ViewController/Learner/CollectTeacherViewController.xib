@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectTeacherViewController" customModule="Mussiiker" customModuleProvider="target">
             <connections>
+                <outlet property="pageContainerView" destination="cpa-hF-NJT" id="UKZ-RX-ccc"/>
+                <outlet property="socialMenuSelector" destination="vAv-QJ-j1y" id="jVk-OU-zdp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,8 +19,46 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ZS-ce-Wfe" userLabel="MenuControlView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vAv-QJ-j1y" userLabel="MenuControl">
+                            <rect key="frame" x="10" y="9" width="390" height="32"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="vAv-QJ-j1y" firstAttribute="centerX" secondItem="1ZS-ce-Wfe" secondAttribute="centerX" id="2Ke-Mu-c9k"/>
+                        <constraint firstItem="vAv-QJ-j1y" firstAttribute="leading" secondItem="1ZS-ce-Wfe" secondAttribute="leading" constant="10" id="MnY-7g-hiU"/>
+                        <constraint firstAttribute="bottom" secondItem="vAv-QJ-j1y" secondAttribute="bottom" constant="10" id="QEa-16-8mQ"/>
+                        <constraint firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="207:448" id="Zg8-qp-iU9"/>
+                        <constraint firstAttribute="trailing" secondItem="vAv-QJ-j1y" secondAttribute="trailing" constant="10" id="agy-nO-sfs"/>
+                        <constraint firstAttribute="height" constant="50" id="dw6-aE-xZs"/>
+                        <constraint firstItem="vAv-QJ-j1y" firstAttribute="top" secondItem="1ZS-ce-Wfe" secondAttribute="top" constant="10" id="puv-eK-krt"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-hF-NJT" userLabel="PageContainerView">
+                    <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                    <viewLayoutGuide key="safeArea" id="saz-qf-l1c"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="N3c-f7-Ko7"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cpa-hF-NJT" secondAttribute="bottom" id="9RD-yC-riT"/>
+                <constraint firstItem="cpa-hF-NJT" firstAttribute="leading" secondItem="N3c-f7-Ko7" secondAttribute="leading" id="BGj-A8-Fx0"/>
+                <constraint firstItem="1ZS-ce-Wfe" firstAttribute="top" secondItem="N3c-f7-Ko7" secondAttribute="top" id="Lsm-Qk-dnW"/>
+                <constraint firstItem="1ZS-ce-Wfe" firstAttribute="leading" secondItem="N3c-f7-Ko7" secondAttribute="leading" id="UMO-xO-TC8"/>
+                <constraint firstItem="1ZS-ce-Wfe" firstAttribute="trailing" secondItem="N3c-f7-Ko7" secondAttribute="trailing" id="Xux-ni-QZ8"/>
+                <constraint firstItem="cpa-hF-NJT" firstAttribute="top" secondItem="1ZS-ce-Wfe" secondAttribute="bottom" id="iQB-4z-OrM"/>
+                <constraint firstItem="cpa-hF-NJT" firstAttribute="trailing" secondItem="N3c-f7-Ko7" secondAttribute="trailing" id="m4J-ay-LzQ"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="144"/>
         </view>
     </objects>

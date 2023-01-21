@@ -49,9 +49,8 @@ class TeachersView: UIView {
         viewModel.loadData()
         viewModel.click = { row in
             print("row:\(row)")
-        }
+        }ˇ
     }
-    
     
     private func autoLayout() {
         teachersView.snp.makeConstraints { make in
@@ -70,7 +69,7 @@ extension TeachersView: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TeachersCollectionViewCell.identifier, for: indexPath) as! TeachersCollectionViewCell
         cell.teacherPhoto.image = UIImage(named: "")
         cell.teacherName.text = viewModel.cellForItemsAtSection(indexPath).basicData.name
-        cell.professionInstrument.text = viewModel.cellForItemsAtSection(indexPath).basicData.profession
+        cell.professionInstruments.text = viewModel.cellForItemsAtSection(indexPath).basicData.profession
         return cell
     }
     

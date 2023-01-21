@@ -4,7 +4,7 @@
 //
 //  Created by Jhen Mu on 2023/1/12.
 //
-
+//API need to consider the "total and recommend" parameter.
 import UIKit
 
 class FindTeacherViewController: UIViewController {
@@ -13,6 +13,7 @@ class FindTeacherViewController: UIViewController {
     private var settingBarButton: UIBarButtonItem!
     private var alreadyCollectBarButton: UIBarButtonItem!
     private var searchTeacherViewController: SearchTeacherViewController!
+    private var collectTeacherViewController: CollectTeacherViewController!
     
     @IBOutlet private var recommedTeacherKnowMoreButton: UIButton!
     @IBOutlet private var stringInstrumentKnowMoreButton: UIButton!
@@ -73,7 +74,7 @@ class FindTeacherViewController: UIViewController {
     }
     
     @objc private func toCollectionList() {
-        let collectTeacherViewController = CollectTeacherViewController()
+        collectTeacherViewController = CollectTeacherViewController()
         navigationController?.pushViewController(collectTeacherViewController, animated: true)
     }
 
