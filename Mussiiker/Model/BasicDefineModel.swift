@@ -13,8 +13,8 @@ struct BasicData: Codable {
     var age: Int
     var gender: Gender
     var birthDay: Date?
-    var profession: String?
-    var photo: String?
+    var professional: [String]
+    var photo: [String]
     var phpne: String?
     var email: String?
 }

@@ -27,6 +27,9 @@ struct Teacher: Codable {
         var acceptRemoteTeachingString: String {
             return acceptRemoteTeaching ? "可以接受遠端教學" : "希望見面教學"
         }
+        var acceptFreeTeachingString: String {
+            return acceptFreeTeaching ? "可試教" : "不試教"
+        }
         var teachingType: [TeachingType]
         var isUnderGraduate: Bool
         var hopeLearnGender: Gender

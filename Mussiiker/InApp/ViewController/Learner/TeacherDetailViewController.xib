@@ -10,6 +10,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TeacherDetailViewController" customModule="Mussiiker" customModuleProvider="target">
             <connections>
+                <outlet property="acceptFreeTeaching" destination="pQ0-Pr-1Hb" id="tbo-bg-DGt"/>
+                <outlet property="acceptLearnerGender" destination="OTv-gr-P64" id="Hb2-X9-Xws"/>
+                <outlet property="acceptRemoteTeaching" destination="XTs-sa-1hO" id="QmU-R6-jBY"/>
+                <outlet property="collectTeacher" destination="zmF-gd-c54" id="YdE-bV-ZoO"/>
+                <outlet property="contactTeacher" destination="t1s-G2-xmN" id="uhO-Gl-8Ns"/>
+                <outlet property="emailTeacher" destination="43d-bS-s4i" id="U0r-4i-pad"/>
+                <outlet property="gender" destination="dbz-k8-RhX" id="ZgR-Ge-T2L"/>
+                <outlet property="hopeTeachingArea" destination="UJq-21-nFs" id="clh-Tk-0ra"/>
+                <outlet property="name" destination="P1u-G8-8mg" id="UDC-Ub-5hv"/>
+                <outlet property="professionItems" destination="1DF-7g-0vf" id="SXS-Yb-LQY"/>
+                <outlet property="professional" destination="1FC-xq-d9f" id="jeG-Id-Z3G"/>
+                <outlet property="teacherDetail" destination="wM6-kx-vlO" id="B0k-RP-d2h"/>
+                <outlet property="teacherExperienceAge" destination="ONE-Rw-akb" id="E5s-JQ-bCO"/>
+                <outlet property="teacherPhotoContainerView" destination="iJ2-XW-KtD" id="ykg-TM-02J"/>
+                <outlet property="teacherPhotoPageContainerView" destination="iJ2-XW-KtD" id="Apq-ha-pcW"/>
+                <outlet property="teachingReason" destination="Cgv-BH-JIT" id="Yxt-pX-bgk"/>
+                <outlet property="teachingType" destination="f5i-Ps-FG9" id="gfO-Il-4Fr"/>
+                <outlet property="toTeachSkillVideo" destination="A7J-WA-xid" id="vdV-lT-zLF"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,14 +39,10 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1of-au-eUB">
                     <rect key="frame" x="0.0" y="44" width="414" height="1000"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJ2-XW-KtD" userLabel="TeacherPhotoPageContainerView">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJ2-XW-KtD" userLabel="TeacherPhotoPageContainerView" customClass="TeacherPhotoPageContainerView" customModule="Mussiiker" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
-                            <viewLayoutGuide key="safeArea" id="Aad-5I-HbV"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
-                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="lVS-6o-sva">
-                            <rect key="frame" x="149.5" y="304" width="115.5" height="26"/>
-                        </pageControl>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3a-gF-4Km" userLabel="ContentView">
                             <rect key="frame" x="0.0" y="350" width="414" height="546"/>
                             <subviews>
@@ -165,7 +179,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1DF-7g-0vf">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1DF-7g-0vf" userLabel="ProfessionItems">
                                                     <rect key="frame" x="80" y="0.0" width="250" height="35"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6tc-X5-UZq">
@@ -264,12 +278,10 @@
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="HYp-o3-Ihh"/>
                     <constraints>
-                        <constraint firstItem="iJ2-XW-KtD" firstAttribute="bottom" secondItem="lVS-6o-sva" secondAttribute="bottom" constant="20" id="2OG-aT-cOT"/>
                         <constraint firstItem="j3a-gF-4Km" firstAttribute="trailing" secondItem="iJ2-XW-KtD" secondAttribute="trailing" id="3Df-b1-4oQ"/>
                         <constraint firstItem="j3a-gF-4Km" firstAttribute="top" secondItem="iJ2-XW-KtD" secondAttribute="bottom" id="AOO-hU-n0K"/>
                         <constraint firstItem="j3a-gF-4Km" firstAttribute="leading" secondItem="iJ2-XW-KtD" secondAttribute="leading" id="LyF-pi-mQX"/>
                         <constraint firstItem="iJ2-XW-KtD" firstAttribute="top" secondItem="2Za-Am-LgX" secondAttribute="top" id="NRL-li-Z7V"/>
-                        <constraint firstItem="lVS-6o-sva" firstAttribute="centerX" secondItem="iJ2-XW-KtD" secondAttribute="centerX" id="P9l-xC-xy4"/>
                         <constraint firstAttribute="bottom" secondItem="j3a-gF-4Km" secondAttribute="bottom" id="buB-lL-aE9"/>
                         <constraint firstAttribute="trailing" secondItem="iJ2-XW-KtD" secondAttribute="trailing" id="kz3-Ot-bRy"/>
                         <constraint firstItem="j3a-gF-4Km" firstAttribute="top" secondItem="1of-au-eUB" secondAttribute="top" constant="350" id="lxR-da-8L9"/>

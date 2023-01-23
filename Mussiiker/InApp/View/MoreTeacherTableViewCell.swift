@@ -60,9 +60,9 @@ class MoreTeacherTableViewCell: UITableViewCell {
     }
     
     public func configure(_ teacher: Teacher) {
-        teacherPhoto.image = UIImage(named: teacher.basicData.photo ?? "")
+        teacherPhoto.image = UIImage(named: teacher.basicData.photo[0])
         name.text = teacher.basicData.name
-        professional.text = teacher.basicData.profession
+        professional.text = teacher.basicData.professional.joined(separator: ",")
         gender.text = teacher.basicData.gender.text
         location.text = teacher.teachingStyle.hopeTeachingLocation.joined(separator: ",")
         teachExperience.text = "\(teacher.teachingHistory.teachingAge)"

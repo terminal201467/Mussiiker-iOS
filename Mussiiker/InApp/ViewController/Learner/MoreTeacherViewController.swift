@@ -15,6 +15,8 @@ class MoreTeacherViewController: UIViewController {
     
     private var teacherDetailViewController: TeacherDetailViewController!
     
+    private var detailTeacher: Teacher? = nil
+    
     init(by kinds: TeacherDataType) {
         self.viewModel = MoreTeacherViewModel(by: kinds)
         super.init(nibName: nil, bundle: nil)
@@ -26,6 +28,7 @@ class MoreTeacherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        detailTeacher = nil
         setTable()
     }
     
@@ -34,9 +37,19 @@ class MoreTeacherViewController: UIViewController {
         teacherDetailTable.dataSource = self
     }
     
-    private func pushMoreDetailViewController() {
-        teacherDetailViewController = TeacherDetailViewController()
+    private func pushMoreDetailViewController(by teacher: Teacher) {
+        teacherDetailViewController = TeacherDetailViewController(by: teacher)
         navigationController?.pushViewController(teacherDetailViewController, animated: true)
+        teacherDetailViewController.toCollect = {
+            print("collectTheTeacher")
+            //Save the Teacher info into the learner Backend
+        }
+        teacherDetailViewController.toContact = {
+            //turn to the cellPhone
+        }
+        teacherDetailViewController.toEmail = {
+            //turn to Apple Email
+        }
     }
     
 }
@@ -51,7 +64,7 @@ extension MoreTeacherViewController: UITableViewDelegate, UITableViewDataSource 
         cell.configure(viewModel.cellForRowAt(indexPath))
         cell.toMoreDetail = {
             print("toMoreDetail")
-            self.pushMoreDetailViewController()
+            self.pushMoreDetailViewController(by: self.detailTeacher!)
         }
         cell.collectTeacher = {
             print("collectTeacher")
