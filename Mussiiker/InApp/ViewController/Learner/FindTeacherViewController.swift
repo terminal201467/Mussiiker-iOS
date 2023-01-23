@@ -13,7 +13,7 @@ class FindTeacherViewController: UIViewController {
     private var settingBarButton: UIBarButtonItem!
     private var alreadyCollectBarButton: UIBarButtonItem!
     private var searchTeacherViewController: SearchTeacherViewController!
-    private var collectTeacherViewController: CollectTeacherViewController!
+//    private var collectTeacherViewController: CollectTeacherViewController!
     
     @IBOutlet private var recommedTeacherKnowMoreButton: UIButton!
     @IBOutlet private var stringInstrumentKnowMoreButton: UIButton!
@@ -74,8 +74,8 @@ class FindTeacherViewController: UIViewController {
     }
     
     @objc private func toCollectionList() {
-        collectTeacherViewController = CollectTeacherViewController()
-        navigationController?.pushViewController(collectTeacherViewController, animated: true)
+//        collectTeacherViewController = CollectTeacherViewController()
+//        navigationController?.pushViewController(collectTeacherViewController, animated: true)
     }
 
     @objc private func toSettingList() {

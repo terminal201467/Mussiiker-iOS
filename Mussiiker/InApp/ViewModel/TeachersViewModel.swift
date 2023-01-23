@@ -7,14 +7,14 @@
 
 import Foundation
 
-enum DataType: String {
+enum TeacherDataType: String {
     case recommend, stringInstrument, drums, woodWind, brassInstrument, otherkinds
 }
 
 //Singleton
 class TeacherDataModel {
     //MARK: -Parameters
-    var requestDataType: DataType
+    var requestDataType: TeacherDataType
     
     //MARK: -StoreData
     private var teachers: [Teacher] = []
@@ -23,7 +23,7 @@ class TeacherDataModel {
     var click: ((Int)->(Void))?
     
     //MARK: -Initailization
-    init (by dataType: DataType) {
+    init (by dataType: TeacherDataType) {
         self.requestDataType = dataType
     }
     

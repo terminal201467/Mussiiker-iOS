@@ -14,6 +14,9 @@ struct BasicData: Codable {
     var gender: Gender
     var birthDay: Date?
     var profession: String?
+    var photo: String?
+    var phpne: String?
+    var email: String?
 }
 
 enum Gender: Int ,Codable {

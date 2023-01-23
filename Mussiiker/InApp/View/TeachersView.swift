@@ -49,7 +49,7 @@ class TeachersView: UIView {
         viewModel.loadData()
         viewModel.click = { row in
             print("row:\(row)")
-        }ˇ
+        }
     }
     
     private func autoLayout() {

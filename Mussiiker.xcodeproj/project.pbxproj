@@ -43,6 +43,8 @@
 		97DE344E297B9D9F001C377D /* MoreTeacherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE344D297B9D9F001C377D /* MoreTeacherViewModel.swift */; };
 		97DE3451297B9FDE001C377D /* MoreTeacherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE344F297B9FDE001C377D /* MoreTeacherTableViewCell.swift */; };
 		97DE3452297B9FDE001C377D /* MoreTeacherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE3450297B9FDE001C377D /* MoreTeacherTableViewCell.xib */; };
+		97DE3455297D758B001C377D /* TeacherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE3453297D758B001C377D /* TeacherDetailViewController.swift */; };
+		97DE3456297D758B001C377D /* TeacherDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE3454297D758B001C377D /* TeacherDetailViewController.xib */; };
 		97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAD296CDC77005E2F8E /* AppDelegate.swift */; };
 		97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */; };
 		97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CB1296CDC77005E2F8E /* LearnerInfoPageViewController.swift */; };
@@ -86,6 +88,8 @@
 		97DE344D297B9D9F001C377D /* MoreTeacherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTeacherViewModel.swift; sourceTree = "<group>"; };
 		97DE344F297B9FDE001C377D /* MoreTeacherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTeacherTableViewCell.swift; sourceTree = "<group>"; };
 		97DE3450297B9FDE001C377D /* MoreTeacherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTeacherTableViewCell.xib; sourceTree = "<group>"; };
+		97DE3453297D758B001C377D /* TeacherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDetailViewController.swift; sourceTree = "<group>"; };
+		97DE3454297D758B001C377D /* TeacherDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherDetailViewController.xib; sourceTree = "<group>"; };
 		97F34CAA296CDC77005E2F8E /* Mussiiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mussiiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F34CAD296CDC77005E2F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 				97BE9B05296F88ED005BD6DF /* FindTeacherViewController.xib */,
 				97DE3449297B9C72001C377D /* MoreTeacherViewController.swift */,
 				97DE344A297B9C72001C377D /* MoreTeacherViewController.xib */,
+				97DE3453297D758B001C377D /* TeacherDetailViewController.swift */,
+				97DE3454297D758B001C377D /* TeacherDetailViewController.xib */,
 				97BE9B2A2973A797005BD6DF /* SearchTeacherViewController.swift */,
 				97BE9B2B2973A797005BD6DF /* SearchTeacherViewController.xib */,
 				97BE9B00296F88D7005BD6DF /* FindGroupViewController.swift */,
@@ -365,6 +371,7 @@
 				97DE3452297B9FDE001C377D /* MoreTeacherTableViewCell.xib in Resources */,
 				97BE9B16296F8B2E005BD6DF /* IdentityViewController.xib in Resources */,
 				97BE9B03296F88D7005BD6DF /* FindGroupViewController.xib in Resources */,
+				97DE3456297D758B001C377D /* TeacherDetailViewController.xib in Resources */,
 				97F34CB7296CDC79005E2F8E /* Assets.xcassets in Resources */,
 				97DE344C297B9C72001C377D /* MoreTeacherViewController.xib in Resources */,
 				97BE9AFF296F88AF005BD6DF /* NearMusicClassRoomViewController.xib in Resources */,
@@ -422,6 +429,7 @@
 			files = (
 				97BE9AFA296F86AE005BD6DF /* LoginViewController.swift in Sources */,
 				97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */,
+				97DE3455297D758B001C377D /* TeacherDetailViewController.swift in Sources */,
 				97BE9B382973BC13005BD6DF /* Network.swift in Sources */,
 				97BE9B0B296F89D3005BD6DF /* RecentActivityViewController.swift in Sources */,
 				97BE9B2C2973A797005BD6DF /* SearchTeacherViewController.swift in Sources */,
