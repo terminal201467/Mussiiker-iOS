@@ -15,14 +15,15 @@ class TeachersView: UIView {
     private let teachersView: UICollectionView = {
        let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
-        flowLayout.itemSize = CGSize(width: 160, height: 160)
+        flowLayout.itemSize = CGSize(width: 300, height: 160)
         flowLayout.minimumInteritemSpacing = 10
         let view = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
-        view.register(TeachersCollectionViewCell.self, forCellWithReuseIdentifier: TeachersCollectionViewCell.identifier)
+        view.register(TeacherCollectionViewCell.self, forCellWithReuseIdentifier: TeacherCollectionViewCell.identifier)
+        view.isPagingEnabled = true
         return view
     }()
     
-    init(dataType: DataType) {
+    init(dataType: TeacherDataType) {
         self.viewModel = TeacherDataModel(by: dataType)
         super.init(frame: .zero)
     }
@@ -47,8 +48,8 @@ class TeachersView: UIView {
     
     private func setViewModel() {
         viewModel.loadData()
-        viewModel.click = { row in
-            print("row:\(row)")
+        viewModel.click = { indexPath in
+            print("indexPath:\(indexPath)")
         }
     }
     
@@ -66,14 +67,12 @@ extension TeachersView: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TeachersCollectionViewCell.identifier, for: indexPath) as! TeachersCollectionViewCell
-        cell.teacherPhoto.image = UIImage(named: "")
-        cell.teacherName.text = viewModel.cellForItemsAtSection(indexPath).basicData.name
-        cell.professionInstruments.text = viewModel.cellForItemsAtSection(indexPath).basicData.profession
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TeacherCollectionViewCell.identifier, for: indexPath) as! TeacherCollectionViewCell
+        cell.configure(by: viewModel.cellForItemsAtSection(indexPath))
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        viewModel.click?(indexPath.row)
+        viewModel.click?(indexPath)
     }
 }

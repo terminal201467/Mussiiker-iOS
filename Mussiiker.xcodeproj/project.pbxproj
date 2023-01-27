@@ -49,6 +49,15 @@
 		97DE345A297E87A5001C377D /* TeacherPhotoPageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE3459297E87A5001C377D /* TeacherPhotoPageContainerView.swift */; };
 		97DE345F297E8AD9001C377D /* InstrumentKindsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE345D297E8AD9001C377D /* InstrumentKindsCollectionViewCell.swift */; };
 		97DE3460297E8AD9001C377D /* InstrumentKindsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE345E297E8AD9001C377D /* InstrumentKindsCollectionViewCell.xib */; };
+		97DE3463297ECDE2001C377D /* TeacherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE3461297ECDE2001C377D /* TeacherCollectionViewCell.swift */; };
+		97DE3464297ECDE2001C377D /* TeacherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE3462297ECDE2001C377D /* TeacherCollectionViewCell.xib */; };
+		97DE3467297F5C94001C377D /* CollectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE3465297F5C94001C377D /* CollectionListViewController.swift */; };
+		97DE3468297F5C94001C377D /* CollectionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE3466297F5C94001C377D /* CollectionListViewController.xib */; };
+		97DE346A297F68BF001C377D /* CollectionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE3469297F68BF001C377D /* CollectionListViewModel.swift */; };
+		97DE346D297F964D001C377D /* CollectedTeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE346B297F964D001C377D /* CollectedTeacherViewController.swift */; };
+		97DE346E297F964D001C377D /* CollectedTeacherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE346C297F964D001C377D /* CollectedTeacherViewController.xib */; };
+		97DE347129837448001C377D /* CollectedOrContactedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE346F29837448001C377D /* CollectedOrContactedTableViewCell.swift */; };
+		97DE347229837448001C377D /* CollectedOrContactedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE347029837448001C377D /* CollectedOrContactedTableViewCell.xib */; };
 		97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAD296CDC77005E2F8E /* AppDelegate.swift */; };
 		97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */; };
 		97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CB1296CDC77005E2F8E /* LearnerInfoPageViewController.swift */; };
@@ -98,6 +107,15 @@
 		97DE3459297E87A5001C377D /* TeacherPhotoPageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherPhotoPageContainerView.swift; sourceTree = "<group>"; };
 		97DE345D297E8AD9001C377D /* InstrumentKindsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentKindsCollectionViewCell.swift; sourceTree = "<group>"; };
 		97DE345E297E8AD9001C377D /* InstrumentKindsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstrumentKindsCollectionViewCell.xib; sourceTree = "<group>"; };
+		97DE3461297ECDE2001C377D /* TeacherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCollectionViewCell.swift; sourceTree = "<group>"; };
+		97DE3462297ECDE2001C377D /* TeacherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherCollectionViewCell.xib; sourceTree = "<group>"; };
+		97DE3465297F5C94001C377D /* CollectionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionListViewController.swift; sourceTree = "<group>"; };
+		97DE3466297F5C94001C377D /* CollectionListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionListViewController.xib; sourceTree = "<group>"; };
+		97DE3469297F68BF001C377D /* CollectionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionListViewModel.swift; sourceTree = "<group>"; };
+		97DE346B297F964D001C377D /* CollectedTeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectedTeacherViewController.swift; sourceTree = "<group>"; };
+		97DE346C297F964D001C377D /* CollectedTeacherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectedTeacherViewController.xib; sourceTree = "<group>"; };
+		97DE346F29837448001C377D /* CollectedOrContactedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectedOrContactedTableViewCell.swift; sourceTree = "<group>"; };
+		97DE347029837448001C377D /* CollectedOrContactedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectedOrContactedTableViewCell.xib; sourceTree = "<group>"; };
 		97F34CAA296CDC77005E2F8E /* Mussiiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mussiiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F34CAD296CDC77005E2F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -176,8 +194,12 @@
 				97DE3459297E87A5001C377D /* TeacherPhotoPageContainerView.swift */,
 				97DE344F297B9FDE001C377D /* MoreTeacherTableViewCell.swift */,
 				97DE3450297B9FDE001C377D /* MoreTeacherTableViewCell.xib */,
+				97DE3461297ECDE2001C377D /* TeacherCollectionViewCell.swift */,
+				97DE3462297ECDE2001C377D /* TeacherCollectionViewCell.xib */,
 				97DE345D297E8AD9001C377D /* InstrumentKindsCollectionViewCell.swift */,
 				97DE345E297E8AD9001C377D /* InstrumentKindsCollectionViewCell.xib */,
+				97DE346F29837448001C377D /* CollectedOrContactedTableViewCell.swift */,
+				97DE347029837448001C377D /* CollectedOrContactedTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +210,7 @@
 				97BE9B302973AC84005BD6DF /* TeachersViewModel.swift */,
 				97DE344D297B9D9F001C377D /* MoreTeacherViewModel.swift */,
 				9778E580296EFF2C00C4FB84 /* LearnerInfoPageViewModel.swift */,
+				97DE3469297F68BF001C377D /* CollectionListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -232,6 +255,10 @@
 				97BE9AFD296F88AF005BD6DF /* NearMusicClassRoomViewController.xib */,
 				97BE9B09296F89D2005BD6DF /* RecentActivityViewController.swift */,
 				97BE9B0A296F89D2005BD6DF /* RecentActivityViewController.xib */,
+				97DE3465297F5C94001C377D /* CollectionListViewController.swift */,
+				97DE346B297F964D001C377D /* CollectedTeacherViewController.swift */,
+				97DE346C297F964D001C377D /* CollectedTeacherViewController.xib */,
+				97DE3466297F5C94001C377D /* CollectionListViewController.xib */,
 			);
 			path = Learner;
 			sourceTree = "<group>";
@@ -374,6 +401,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97DE346E297F964D001C377D /* CollectedTeacherViewController.xib in Resources */,
+				97DE3468297F5C94001C377D /* CollectionListViewController.xib in Resources */,
 				97BE9B2D2973A797005BD6DF /* SearchTeacherViewController.xib in Resources */,
 				97BE9B07296F88ED005BD6DF /* FindTeacherViewController.xib in Resources */,
 				97BE9B12296F8A49005BD6DF /* ThirdPartLoginViewController.xib in Resources */,
@@ -386,8 +415,10 @@
 				97DE3460297E8AD9001C377D /* InstrumentKindsCollectionViewCell.xib in Resources */,
 				97DE3456297D758B001C377D /* TeacherDetailViewController.xib in Resources */,
 				97F34CB7296CDC79005E2F8E /* Assets.xcassets in Resources */,
+				97DE347229837448001C377D /* CollectedOrContactedTableViewCell.xib in Resources */,
 				97DE344C297B9C72001C377D /* MoreTeacherViewController.xib in Resources */,
 				97BE9AFF296F88AF005BD6DF /* NearMusicClassRoomViewController.xib in Resources */,
+				97DE3464297ECDE2001C377D /* TeacherCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97DE346A297F68BF001C377D /* CollectionListViewModel.swift in Sources */,
 				97BE9AFA296F86AE005BD6DF /* LoginViewController.swift in Sources */,
 				97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */,
 				97DE3455297D758B001C377D /* TeacherDetailViewController.swift in Sources */,
@@ -449,6 +481,7 @@
 				97BE9B11296F8A49005BD6DF /* ThirdPartLoginViewController.swift in Sources */,
 				97DE344B297B9C72001C377D /* MoreTeacherViewController.swift in Sources */,
 				97BE9AF7296F8502005BD6DF /* MainViewController.swift in Sources */,
+				97DE347129837448001C377D /* CollectedOrContactedTableViewCell.swift in Sources */,
 				97DE3458297E5E95001C377D /* UIButton.swift in Sources */,
 				9778E572296EEDD400C4FB84 /* Teacher.swift in Sources */,
 				97BE9B3C2973E536005BD6DF /* UIColor.swift in Sources */,
@@ -458,6 +491,7 @@
 				9778E576296EEEAA00C4FB84 /* BasicDefineModel.swift in Sources */,
 				97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */,
 				97BE9AFE296F88AF005BD6DF /* NearMusicClassRoomViewController.swift in Sources */,
+				97DE3467297F5C94001C377D /* CollectionListViewController.swift in Sources */,
 				97BE9B312973AC84005BD6DF /* TeachersViewModel.swift in Sources */,
 				97BE9B3A2973C122005BD6DF /* ErrorState.swift in Sources */,
 				9778E574296EEE4D00C4FB84 /* MusicHost.swift in Sources */,
@@ -467,8 +501,10 @@
 				97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */,
 				97DE3451297B9FDE001C377D /* MoreTeacherTableViewCell.swift in Sources */,
 				97DE344E297B9D9F001C377D /* MoreTeacherViewModel.swift in Sources */,
+				97DE346D297F964D001C377D /* CollectedTeacherViewController.swift in Sources */,
 				9778E56F296EDED000C4FB84 /* Learner.swift in Sources */,
 				97BE9B02296F88D7005BD6DF /* FindGroupViewController.swift in Sources */,
+				97DE3463297ECDE2001C377D /* TeacherCollectionViewCell.swift in Sources */,
 				97BE9B15296F8B2E005BD6DF /* IdentityViewController.swift in Sources */,
 				97DE345A297E87A5001C377D /* TeacherPhotoPageContainerView.swift in Sources */,
 			);

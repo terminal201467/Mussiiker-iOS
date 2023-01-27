@@ -12,8 +12,8 @@ class FindTeacherViewController: UIViewController {
     //Buttons
     private var settingBarButton: UIBarButtonItem!
     private var alreadyCollectBarButton: UIBarButtonItem!
-    private var searchTeacherViewController: SearchTeacherViewController!
-//    private var collectTeacherViewController: CollectTeacherViewController!
+    private var moreTeacherViewController: MoreTeacherViewController!
+    private var collectionListViewController: CollectionListViewController!
     
     @IBOutlet private var recommedTeacherKnowMoreButton: UIButton!
     @IBOutlet private var stringInstrumentKnowMoreButton: UIButton!
@@ -59,23 +59,52 @@ class FindTeacherViewController: UIViewController {
         brassInstrumentKnowMoreButton.setTitle("knowMore".localized, for: .normal)
         otherKindsKnowMoreButton.setTitle("knowMore".localized, for: .normal)
         
-        recommedTeacherKnowMoreButton.addTarget(self, action: #selector(toKnowMorePage), for: .touchDown)
-        stringInstrumentKnowMoreButton.addTarget(self, action: #selector(toKnowMorePage), for: .touchDown)
-        drumKnowMoreButton.addTarget(self, action: #selector(toKnowMorePage), for: .touchDown)
-        woodWindInstrumentKnowMoreButton.addTarget(self, action: #selector(toKnowMorePage), for: .touchDown)
-        brassInstrumentKnowMoreButton.addTarget(self, action: #selector(toKnowMorePage), for: .touchDown)
-        otherKindsKnowMoreButton.addTarget(self, action: #selector(toKnowMorePage), for: .touchDown)
+        recommedTeacherKnowMoreButton.addTarget(self, action: #selector(recommedTeacherToKnowMorePage), for: .touchDown)
+        stringInstrumentKnowMoreButton.addTarget(self, action: #selector(stringInstrumentToKnowMorePage), for: .touchDown)
+        drumKnowMoreButton.addTarget(self, action: #selector(drumKnowToMorePage), for: .touchDown)
+        woodWindInstrumentKnowMoreButton.addTarget(self, action: #selector(woodWindInstrumentToKnowMorePage), for: .touchDown)
+        brassInstrumentKnowMoreButton.addTarget(self, action: #selector(brassInstrumentToKnowMorePage), for: .touchDown)
+        otherKindsKnowMoreButton.addTarget(self, action: #selector(otherKindsToCollectionList), for: .touchDown)
     }
     
-    @objc private func toKnowMorePage() {
+    @objc private func recommedTeacherToKnowMorePage() {
         //Need Parameter to initiailization
-        searchTeacherViewController = SearchTeacherViewController()
-        navigationController?.pushViewController(searchTeacherViewController, animated: true)
+        moreTeacherViewController = MoreTeacherViewController(by: .recommend)
+        navigationController?.pushViewController(moreTeacherViewController, animated: true)
+    }
+    
+    @objc private func stringInstrumentToKnowMorePage() {
+        //Need Parameter to initiailization
+        moreTeacherViewController = MoreTeacherViewController(by: .stringInstrument)
+        navigationController?.pushViewController(moreTeacherViewController, animated: true)
+    }
+
+    @objc private func drumKnowToMorePage() {
+        //Need Parameter to initiailization
+        moreTeacherViewController = MoreTeacherViewController(by: .drums)
+        navigationController?.pushViewController(moreTeacherViewController, animated: true)
+    }
+
+    @objc private func woodWindInstrumentToKnowMorePage() {
+        //Need Parameter to initiailization
+        moreTeacherViewController = MoreTeacherViewController(by: .woodWind)
+        navigationController?.pushViewController(moreTeacherViewController, animated: true)
+    }
+
+    @objc private func brassInstrumentToKnowMorePage() {
+        //Need Parameter to initiailization
+        moreTeacherViewController = MoreTeacherViewController(by: .brassInstrument)
+        navigationController?.pushViewController(moreTeacherViewController, animated: true)
+    }
+    
+    @objc private func otherKindsToCollectionList() {
+        moreTeacherViewController = MoreTeacherViewController(by: .otherkinds)
+        navigationController?.pushViewController(moreTeacherViewController, animated: true)
     }
     
     @objc private func toCollectionList() {
-//        collectTeacherViewController = CollectTeacherViewController()
-//        navigationController?.pushViewController(collectTeacherViewController, animated: true)
+        collectionListViewController = CollectionListViewController()
+        navigationController?.pushViewController(collectionListViewController, animated: true)
     }
 
     @objc private func toSettingList() {

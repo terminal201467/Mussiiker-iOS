@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionListViewController" customModule="Mussiiker" customModuleProvider="target">
+            <connections>
+                <outlet property="collectOrContactMenu" destination="hh8-Re-BRN" id="K6J-Yu-RAz"/>
+                <outlet property="pageViewContainerView" destination="4AZ-Aq-Ryv" id="r6v-sk-Sgi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJl-Sb-SNn" userLabel="SegmentedContainerView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hh8-Re-BRN" userLabel="CollectOrContactMenu">
+                            <rect key="frame" x="10" y="15" width="394" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="OJl-Sb-SNn" secondAttribute="width" multiplier="390:414" id="kfF-mx-jnc"/>
+                            </constraints>
+                            <segments>
+                                <segment title=""/>
+                                <segment title=""/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Ofn-L3-NCk"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hh8-Re-BRN" firstAttribute="leading" secondItem="OJl-Sb-SNn" secondAttribute="leading" constant="10" id="Dta-jl-cfu"/>
+                        <constraint firstItem="hh8-Re-BRN" firstAttribute="centerY" secondItem="OJl-Sb-SNn" secondAttribute="centerY" id="Kpc-wF-LM9"/>
+                        <constraint firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="60:896" id="LDc-cf-iD4"/>
+                        <constraint firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:1" id="Q2O-eW-Gdj"/>
+                        <constraint firstItem="hh8-Re-BRN" firstAttribute="centerX" secondItem="OJl-Sb-SNn" secondAttribute="centerX" id="a13-LL-hdi"/>
+                        <constraint firstAttribute="trailing" secondItem="hh8-Re-BRN" secondAttribute="trailing" constant="10" id="tmr-yK-TkT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-Aq-Ryv" userLabel="PageViewContainerView">
+                    <rect key="frame" x="0.0" y="104" width="414" height="792"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="OJl-Sb-SNn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0JG-PH-wF4"/>
+                <constraint firstItem="4AZ-Aq-Ryv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="34H-a7-OOs"/>
+                <constraint firstItem="4AZ-Aq-Ryv" firstAttribute="top" secondItem="OJl-Sb-SNn" secondAttribute="bottom" id="4Wr-Ey-RGt"/>
+                <constraint firstItem="OJl-Sb-SNn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="759-VJ-b09"/>
+                <constraint firstAttribute="bottom" secondItem="4AZ-Aq-Ryv" secondAttribute="bottom" id="E5D-TF-KkA"/>
+                <constraint firstItem="4AZ-Aq-Ryv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Nha-rk-u1x"/>
+                <constraint firstItem="OJl-Sb-SNn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kqK-FB-UqA"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="128"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

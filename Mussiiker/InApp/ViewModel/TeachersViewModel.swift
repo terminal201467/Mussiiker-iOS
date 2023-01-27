@@ -20,7 +20,7 @@ class TeacherDataModel {
     private var teachers: [Teacher] = []
     
     //MARK: -Value Passing Closure
-    var click: ((Int)->(Void))?
+    var click: ((IndexPath)->(Void))?
     
     //MARK: -Initailization
     init (by dataType: TeacherDataType) {
