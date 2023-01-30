@@ -17,7 +17,7 @@ class TeacherDataModel {
     var requestDataType: TeacherDataType
     
     //MARK: -StoreData
-    private var teachers: [Teacher] = []
+    private var teachers: [Teacher] = FakeData().TeacherData
     
     //MARK: -Value Passing Closure
     var click: ((IndexPath)->(Void))?

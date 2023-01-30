@@ -10,19 +10,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindTeacherViewController" customModule="Mussiiker" customModuleProvider="target">
             <connections>
-                <outlet property="brassInstrumentContainerView" destination="u6B-oT-1VV" id="SEC-Ds-em7"/>
                 <outlet property="brassInstrumentKnowMoreButton" destination="zNy-0u-k7o" id="1TR-e8-lSK"/>
+                <outlet property="brassInstrumentTeacherView" destination="u6B-oT-1VV" id="UmR-Ai-XyJ"/>
                 <outlet property="drumKnowMoreButton" destination="MeR-v3-Tjf" id="zxh-vY-zpD"/>
-                <outlet property="drumTeacherContainerView" destination="voh-cV-YzO" id="HEG-rc-Bsb"/>
+                <outlet property="drumTeacherView" destination="voh-cV-YzO" id="JSL-hf-0Cq"/>
                 <outlet property="otherKindsKnowMoreButton" destination="dYf-eM-jGV" id="g0q-Nd-7n1"/>
-                <outlet property="othersContainerView" destination="4dJ-De-yii" id="vLU-oI-VfU"/>
+                <outlet property="othersTeacherView" destination="4dJ-De-yii" id="KTq-nI-6iP"/>
                 <outlet property="recommedTeacherKnowMoreButton" destination="fjl-5O-rQ3" id="rqf-Bg-p43"/>
-                <outlet property="stringInstrumentContainerView" destination="3Q0-X4-S7Q" id="5Zg-eI-SML"/>
                 <outlet property="stringInstrumentKnowMoreButton" destination="IyQ-xU-c3r" id="k0t-3K-qv3"/>
-                <outlet property="systemRecommendTeacherView" destination="grI-6B-EhJ" id="wER-fi-grD"/>
+                <outlet property="stringInstrumentTeacherView" destination="3Q0-X4-S7Q" id="e8u-RL-z8v"/>
+                <outlet property="systemRecommendTeacherView" destination="grI-6B-EhJ" id="yEr-kh-TTY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="woodWindInstrumentKnowMoreButton" destination="Q3E-0H-Vxw" id="8GC-a4-6NV"/>
-                <outlet property="woodWindInstrumentsView" destination="e8E-3X-eHC" id="yGY-UK-1do"/>
+                <outlet property="woodWindInstrumentsTeacherView" destination="e8E-3X-eHC" id="vEr-aF-5CY"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -41,7 +41,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grI-6B-EhJ" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <viewLayoutGuide key="safeArea" id="yGa-qJ-nSa"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         </view>
@@ -70,7 +70,7 @@
                                         <constraint firstItem="YU6-UP-4gn" firstAttribute="trailing" secondItem="ROp-0k-Ajd" secondAttribute="trailing" id="XtS-fH-b6H"/>
                                         <constraint firstAttribute="height" constant="250" id="Yiu-xQ-2K5"/>
                                         <constraint firstItem="YU6-UP-4gn" firstAttribute="leading" secondItem="ROp-0k-Ajd" secondAttribute="leading" id="hJG-0u-G98"/>
-                                        <constraint firstAttribute="bottom" secondItem="grI-6B-EhJ" secondAttribute="bottom" id="nmp-A9-V5c"/>
+                                        <constraint firstItem="YU6-UP-4gn" firstAttribute="top" secondItem="grI-6B-EhJ" secondAttribute="bottom" id="nmp-A9-V5c"/>
                                         <constraint firstAttribute="trailing" secondItem="grI-6B-EhJ" secondAttribute="trailing" id="qbs-ZB-B4Q"/>
                                         <constraint firstItem="grI-6B-EhJ" firstAttribute="leading" secondItem="ROp-0k-Ajd" secondAttribute="leading" id="vkc-mT-hmR"/>
                                     </constraints>
@@ -79,7 +79,7 @@
                                     <rect key="frame" x="0.0" y="250" width="414" height="250"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Q0-X4-S7Q" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <viewLayoutGuide key="safeArea" id="qCm-Wp-jQi"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         </view>
@@ -106,7 +106,7 @@
                                         <constraint firstAttribute="height" constant="250" id="EH7-xZ-9g9"/>
                                         <constraint firstItem="3Q0-X4-S7Q" firstAttribute="top" secondItem="uKk-rg-MyK" secondAttribute="top" id="XZG-v1-fMG"/>
                                         <constraint firstItem="Hah-Q6-UBW" firstAttribute="trailing" secondItem="uKk-rg-MyK" secondAttribute="trailing" id="Y5G-yC-djO"/>
-                                        <constraint firstAttribute="bottom" secondItem="3Q0-X4-S7Q" secondAttribute="bottom" id="a5H-ZA-Uw5"/>
+                                        <constraint firstItem="Hah-Q6-UBW" firstAttribute="top" secondItem="3Q0-X4-S7Q" secondAttribute="bottom" id="a5H-ZA-Uw5"/>
                                         <constraint firstItem="Hah-Q6-UBW" firstAttribute="leading" secondItem="uKk-rg-MyK" secondAttribute="leading" id="hZe-Qo-hYQ"/>
                                         <constraint firstAttribute="bottom" secondItem="Hah-Q6-UBW" secondAttribute="bottom" id="ob6-am-Vag"/>
                                         <constraint firstItem="3Q0-X4-S7Q" firstAttribute="leading" secondItem="uKk-rg-MyK" secondAttribute="leading" id="u6d-10-dds"/>
@@ -117,7 +117,7 @@
                                     <rect key="frame" x="0.0" y="500" width="414" height="250"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voh-cV-YzO" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <viewLayoutGuide key="safeArea" id="eFF-eX-VgP"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         </view>
@@ -146,7 +146,7 @@
                                         <constraint firstItem="CcF-a7-7Jb" firstAttribute="trailing" secondItem="WnU-py-1ur" secondAttribute="trailing" id="Mr1-jc-XIg"/>
                                         <constraint firstItem="CcF-a7-7Jb" firstAttribute="leading" secondItem="WnU-py-1ur" secondAttribute="leading" id="TOG-xA-E9w"/>
                                         <constraint firstItem="CcF-a7-7Jb" firstAttribute="leading" secondItem="WnU-py-1ur" secondAttribute="leading" id="WqP-eY-SMO"/>
-                                        <constraint firstAttribute="bottom" secondItem="voh-cV-YzO" secondAttribute="bottom" id="le6-cv-krX"/>
+                                        <constraint firstItem="CcF-a7-7Jb" firstAttribute="top" secondItem="voh-cV-YzO" secondAttribute="bottom" id="le6-cv-krX"/>
                                         <constraint firstAttribute="trailing" secondItem="CcF-a7-7Jb" secondAttribute="trailing" id="pOl-Q4-Yok"/>
                                         <constraint firstItem="voh-cV-YzO" firstAttribute="top" secondItem="WnU-py-1ur" secondAttribute="top" id="qeg-ja-6ME"/>
                                         <constraint firstItem="voh-cV-YzO" firstAttribute="leading" secondItem="WnU-py-1ur" secondAttribute="leading" id="rKU-Fe-A9i"/>
@@ -156,7 +156,7 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhX-Hl-AeG" userLabel="Wood-windInstrumentsView">
                                     <rect key="frame" x="0.0" y="750" width="414" height="250"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8E-3X-eHC" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e8E-3X-eHC" userLabel="TeachersView">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <viewLayoutGuide key="safeArea" id="VXz-mq-hQS"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -196,8 +196,8 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2gW-EY-VnX" userLabel="BrassInstrumentsView">
                                     <rect key="frame" x="0.0" y="1000" width="414" height="250"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6B-oT-1VV" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6B-oT-1VV" userLabel="TeachersView">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <viewLayoutGuide key="safeArea" id="3Ts-SY-Vp7"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         </view>
@@ -224,7 +224,7 @@
                                         <constraint firstAttribute="trailing" secondItem="u6B-oT-1VV" secondAttribute="trailing" id="TwX-iO-k6Q"/>
                                         <constraint firstAttribute="trailing" secondItem="k0B-fm-O9y" secondAttribute="trailing" id="V1M-Ed-tUP"/>
                                         <constraint firstItem="u6B-oT-1VV" firstAttribute="top" secondItem="2gW-EY-VnX" secondAttribute="top" id="Z2a-vr-150"/>
-                                        <constraint firstAttribute="bottom" secondItem="u6B-oT-1VV" secondAttribute="bottom" id="aed-5v-A3O"/>
+                                        <constraint firstItem="k0B-fm-O9y" firstAttribute="top" secondItem="u6B-oT-1VV" secondAttribute="bottom" id="aed-5v-A3O"/>
                                         <constraint firstAttribute="height" constant="250" id="drP-K2-RED"/>
                                         <constraint firstAttribute="bottom" secondItem="k0B-fm-O9y" secondAttribute="bottom" id="iQs-Ol-CJR"/>
                                         <constraint firstItem="u6B-oT-1VV" firstAttribute="leading" secondItem="2gW-EY-VnX" secondAttribute="leading" id="r98-gd-ltn"/>
@@ -234,8 +234,8 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaN-Z0-Kby" userLabel="OthersKindView">
                                     <rect key="frame" x="0.0" y="1250" width="414" height="250"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dJ-De-yii" userLabel="TeachersView" customClass="TeachersView" customModule="Mussiiker" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dJ-De-yii" userLabel="TeachersView">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="199"/>
                                             <viewLayoutGuide key="safeArea" id="9vI-lj-4Ls"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         </view>
@@ -260,7 +260,7 @@
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="4dJ-De-yii" secondAttribute="trailing" id="7l6-qo-cXD"/>
                                         <constraint firstAttribute="trailing" secondItem="Q6Z-kp-LYT" secondAttribute="trailing" id="87c-ye-cTD"/>
-                                        <constraint firstAttribute="bottom" secondItem="4dJ-De-yii" secondAttribute="bottom" id="BCh-dg-p7f"/>
+                                        <constraint firstItem="Q6Z-kp-LYT" firstAttribute="top" secondItem="4dJ-De-yii" secondAttribute="bottom" id="BCh-dg-p7f"/>
                                         <constraint firstItem="Q6Z-kp-LYT" firstAttribute="leading" secondItem="eaN-Z0-Kby" secondAttribute="leading" id="ICo-53-Pcn"/>
                                         <constraint firstItem="4dJ-De-yii" firstAttribute="top" secondItem="eaN-Z0-Kby" secondAttribute="top" id="One-ur-egU"/>
                                         <constraint firstAttribute="bottom" secondItem="Q6Z-kp-LYT" secondAttribute="bottom" id="enY-iK-j3O"/>

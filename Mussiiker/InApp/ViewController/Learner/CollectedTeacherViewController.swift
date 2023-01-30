@@ -55,8 +55,10 @@ extension CollectedTeacherViewController: UITableViewDelegate,UITableViewDataSou
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if self.isContacted {
-            //push the contacted page
-            print("to contacted page")
+            //push to the chatPage
+            print("to chat page")
+            let chatViewController = ChatViewController()
+            navigationController?.pushViewController(chatViewController, animated: true)
         } else {
             //present the teacherInfo page
             print("to teacherInfo page")

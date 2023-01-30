@@ -19,7 +19,7 @@ struct Teacher: Codable {
     }
     
     struct TeachingStyle: Codable {
-        var hopeTeachingSpendingPerHour: Int?
+        var hopeTeachingSpendingPerHour: Double?
         var hopeTeachingArea: [Area]
         var hopeTeachingLocation: [String]
         var acceptRemoteTeaching: Bool
@@ -32,7 +32,7 @@ struct Teacher: Codable {
         }
         var teachingType: [TeachingType]
         var isUnderGraduate: Bool
-        var hopeLearnGender: Gender
+        var hopeLearnGender: [Gender]
         var teachingReason: TeachingReason
     }
     

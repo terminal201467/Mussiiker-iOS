@@ -58,6 +58,10 @@
 		97DE346E297F964D001C377D /* CollectedTeacherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE346C297F964D001C377D /* CollectedTeacherViewController.xib */; };
 		97DE347129837448001C377D /* CollectedOrContactedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE346F29837448001C377D /* CollectedOrContactedTableViewCell.swift */; };
 		97DE347229837448001C377D /* CollectedOrContactedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE347029837448001C377D /* CollectedOrContactedTableViewCell.xib */; };
+		97DE34752983D9B9001C377D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE34732983D9B8001C377D /* ChatViewController.swift */; };
+		97DE34762983D9B9001C377D /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DE34742983D9B9001C377D /* ChatViewController.xib */; };
+		97DE34782984B8B8001C377D /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE34772984B8B8001C377D /* ChatViewModel.swift */; };
+		97DE347A2985296F001C377D /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97DE34792985296E001C377D /* FakeData.swift */; };
 		97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAD296CDC77005E2F8E /* AppDelegate.swift */; };
 		97F34CB0296CDC77005E2F8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */; };
 		97F34CB2296CDC77005E2F8E /* LearnerInfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F34CB1296CDC77005E2F8E /* LearnerInfoPageViewController.swift */; };
@@ -116,6 +120,10 @@
 		97DE346C297F964D001C377D /* CollectedTeacherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectedTeacherViewController.xib; sourceTree = "<group>"; };
 		97DE346F29837448001C377D /* CollectedOrContactedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectedOrContactedTableViewCell.swift; sourceTree = "<group>"; };
 		97DE347029837448001C377D /* CollectedOrContactedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectedOrContactedTableViewCell.xib; sourceTree = "<group>"; };
+		97DE34732983D9B8001C377D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		97DE34742983D9B9001C377D /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		97DE34772984B8B8001C377D /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		97DE34792985296E001C377D /* FakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
 		97F34CAA296CDC77005E2F8E /* Mussiiker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mussiiker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F34CAD296CDC77005E2F8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F34CAF296CDC77005E2F8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +161,7 @@
 			children = (
 				9778E575296EEEAA00C4FB84 /* BasicDefineModel.swift */,
 				9778E571296EEDD400C4FB84 /* Teacher.swift */,
+				97DE34792985296E001C377D /* FakeData.swift */,
 				9778E56E296EDED000C4FB84 /* Learner.swift */,
 				9778E573296EEE4D00C4FB84 /* MusicHost.swift */,
 			);
@@ -211,6 +220,7 @@
 				97DE344D297B9D9F001C377D /* MoreTeacherViewModel.swift */,
 				9778E580296EFF2C00C4FB84 /* LearnerInfoPageViewModel.swift */,
 				97DE3469297F68BF001C377D /* CollectionListViewModel.swift */,
+				97DE34772984B8B8001C377D /* ChatViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -256,9 +266,11 @@
 				97BE9B09296F89D2005BD6DF /* RecentActivityViewController.swift */,
 				97BE9B0A296F89D2005BD6DF /* RecentActivityViewController.xib */,
 				97DE3465297F5C94001C377D /* CollectionListViewController.swift */,
+				97DE3466297F5C94001C377D /* CollectionListViewController.xib */,
 				97DE346B297F964D001C377D /* CollectedTeacherViewController.swift */,
 				97DE346C297F964D001C377D /* CollectedTeacherViewController.xib */,
-				97DE3466297F5C94001C377D /* CollectionListViewController.xib */,
+				97DE34732983D9B8001C377D /* ChatViewController.swift */,
+				97DE34742983D9B9001C377D /* ChatViewController.xib */,
 			);
 			path = Learner;
 			sourceTree = "<group>";
@@ -408,6 +420,7 @@
 				97BE9B12296F8A49005BD6DF /* ThirdPartLoginViewController.xib in Resources */,
 				97BE9AFB296F86AE005BD6DF /* LoginViewController.xib in Resources */,
 				97BE9B0C296F89D3005BD6DF /* RecentActivityViewController.xib in Resources */,
+				97DE34762983D9B9001C377D /* ChatViewController.xib in Resources */,
 				97BE9B1F29705999005BD6DF /* Localizable.strings in Resources */,
 				97DE3452297B9FDE001C377D /* MoreTeacherTableViewCell.xib in Resources */,
 				97BE9B16296F8B2E005BD6DF /* IdentityViewController.xib in Resources */,
@@ -492,6 +505,7 @@
 				97F34CAE296CDC77005E2F8E /* AppDelegate.swift in Sources */,
 				97BE9AFE296F88AF005BD6DF /* NearMusicClassRoomViewController.swift in Sources */,
 				97DE3467297F5C94001C377D /* CollectionListViewController.swift in Sources */,
+				97DE34782984B8B8001C377D /* ChatViewModel.swift in Sources */,
 				97BE9B312973AC84005BD6DF /* TeachersViewModel.swift in Sources */,
 				97BE9B3A2973C122005BD6DF /* ErrorState.swift in Sources */,
 				9778E574296EEE4D00C4FB84 /* MusicHost.swift in Sources */,
@@ -504,7 +518,9 @@
 				97DE346D297F964D001C377D /* CollectedTeacherViewController.swift in Sources */,
 				9778E56F296EDED000C4FB84 /* Learner.swift in Sources */,
 				97BE9B02296F88D7005BD6DF /* FindGroupViewController.swift in Sources */,
+				97DE34752983D9B9001C377D /* ChatViewController.swift in Sources */,
 				97DE3463297ECDE2001C377D /* TeacherCollectionViewCell.swift in Sources */,
+				97DE347A2985296F001C377D /* FakeData.swift in Sources */,
 				97BE9B15296F8B2E005BD6DF /* IdentityViewController.swift in Sources */,
 				97DE345A297E87A5001C377D /* TeacherPhotoPageContainerView.swift in Sources */,
 			);

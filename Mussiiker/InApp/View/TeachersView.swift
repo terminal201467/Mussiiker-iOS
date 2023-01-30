@@ -12,6 +12,8 @@ class TeachersView: UIView {
     
     private var viewModel: TeacherDataModel!
     
+    private var dataType: TeacherDataType!
+    
     private let teachersView: UICollectionView = {
        let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
@@ -24,6 +26,7 @@ class TeachersView: UIView {
     }()
     
     init(dataType: TeacherDataType) {
+        self.dataType = dataType
         self.viewModel = TeacherDataModel(by: dataType)
         super.init(frame: .zero)
     }
@@ -31,14 +34,18 @@ class TeachersView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
-        setViewModel()
-        setCollectionView()
         autoLayout()
+//        setViewModel()
+        setCollectionView()
         
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        backgroundColor = .white
+        autoLayout()
+//        setViewModel()
+        setCollectionView()
     }
     
     private func setCollectionView() {
@@ -54,6 +61,7 @@ class TeachersView: UIView {
     }
     
     private func autoLayout() {
+        addSubview(teachersView)
         teachersView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }

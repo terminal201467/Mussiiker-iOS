@@ -91,10 +91,10 @@ class TeacherDetailViewController: UIViewController {
         teacherExperienceAge.text = setTeachingAge(with: teacher.teachingHistory.isHadTeachingExperience)
         acceptRemoteTeaching.text = teacher.teachingStyle.acceptRemoteTeachingString
         acceptFreeTeaching.text = teacher.teachingStyle.acceptFreeTeachingString
-        acceptLearnerGender.text = teacher.teachingStyle.hopeLearnGender.text
+        acceptLearnerGender.text = teacher.teachingStyle.hopeLearnGender.map{$0.text}.joined(separator: ",")
         hopeTeachingArea.text = teacher.teachingStyle.hopeTeachingArea.map({ area in area.areaString }).joined(separator: ",")
         teachingReason.text = teacher.teachingStyle.teachingReason.reasonText
-        teachingType.text = teacher.teachingStyle.teachingType.map({ type in type.type }).joined(separator: ",")
+        teachingType.text = teacher.teachingStyle.teachingType.map{$0.type}.joined(separator: ",")
         professional.text = "professionalInstruments".localized
     }
     

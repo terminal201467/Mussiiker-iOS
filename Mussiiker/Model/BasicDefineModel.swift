@@ -15,7 +15,7 @@ struct BasicData: Codable {
     var birthDay: Date?
     var professional: [String]
     var photo: [String]
-    var phpne: String?
+    var phone: String?
     var email: String?
 }
 

@@ -23,12 +23,14 @@ class FindTeacherViewController: UIViewController {
     @IBOutlet private var otherKindsKnowMoreButton: UIButton!
     
     //TeachersView
-    @IBOutlet private var systemRecommendTeacherView: TeachersView!
-    @IBOutlet private var stringInstrumentContainerView: TeachersView!
-    @IBOutlet private var drumTeacherContainerView: TeachersView!
-    @IBOutlet private var woodWindInstrumentsView: TeachersView!
-    @IBOutlet private var brassInstrumentContainerView: TeachersView!
-    @IBOutlet private var othersContainerView: TeachersView!
+    @IBOutlet private var systemRecommendTeacherView: UIView!
+    @IBOutlet private var stringInstrumentTeacherView: UIView!
+    @IBOutlet private var drumTeacherView: UIView!
+    @IBOutlet private var woodWindInstrumentsTeacherView: UIView!
+    @IBOutlet private var brassInstrumentTeacherView: UIView!
+    @IBOutlet private var othersTeacherView: UIView!
+    
+    
     
     //MARK: -Initialization
     override func viewDidLoad() {
@@ -36,6 +38,7 @@ class FindTeacherViewController: UIViewController {
         view.backgroundColor = .white
         setUpNavigationBar()
         setKnowMoreButtons()
+        setUpTeachersView()
     }
     
     private func setUpNavigationBar() {
@@ -48,6 +51,17 @@ class FindTeacherViewController: UIViewController {
         settingBarButton = UIBarButtonItem(image: UIImage(named: "list.dash"), style: .plain, target: self, action: #selector(toSettingList))
         navigationItem.leftBarButtonItem = settingBarButton
         navigationItem.rightBarButtonItem = alreadyCollectBarButton
+        
+    }
+    
+    private func setUpTeachersView() {
+        systemRecommendTeacherView.addSubview(TeachersView(dataType: .recommend))
+        stringInstrumentTeacherView.addSubview(TeachersView(dataType: .stringInstrument))
+        drumTeacherView.addSubview(TeachersView(dataType: .drums))
+        woodWindInstrumentsTeacherView.addSubview(TeachersView(dataType: .woodWind))
+        brassInstrumentTeacherView.addSubview(TeachersView(dataType: .brassInstrument))
+        othersTeacherView.addSubview(TeachersView(dataType: .otherkinds))
+        
         
     }
     
